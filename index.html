@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>太田鉄也 プロフィール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <h1>太田鉄也 プロフィール</h1>
+      <p>Tetsuya Ota Profile</p>
+    </header>
+
+    <nav class="tab-nav" aria-label="プロフィールの表示切り替え" role="tablist">
+      <button class="tab-button is-active" id="profile-tab-button" type="button" role="tab" aria-selected="true" aria-controls="profile-tab" data-tab="profile-tab">プロフィール</button>
+      <button class="tab-button" id="history-tab-button" type="button" role="tab" aria-selected="false" aria-controls="history-tab" tabindex="-1" data-tab="history-tab">経歴・歩み</button>
+      <button class="tab-button" id="learning-tab-button" type="button" role="tab" aria-selected="false" aria-controls="learning-tab" tabindex="-1" data-tab="learning-tab">学習・これから</button>
+      <button class="tab-button" id="interest-tab-button" type="button" role="tab" aria-selected="false" aria-controls="interest-tab" tabindex="-1" data-tab="interest-tab">好きなこと</button>
+    </nav>
+
+    <section class="otaru-hero" aria-label="北海道小樽市のイメージ">
+      <img src="otaru-canal.png" alt="北海道小樽市の小樽運河をイメージした風景">
+      <div class="otaru-hero-text">
+        <span>My Roots</span>
+        <h2>北海道小樽市から、新しい挑戦へ。</h2>
+        <p>小樽で育った経験を土台に、介護の現場で学んだ気配りをWeb制作にも活かしていきたいです。</p>
+      </div>
+    </section>
+
+    <section class="profile">
+      <div class="photo-frame">
+        <img src="profile-photo-otaru-sharp-face.png" alt="太田鉄也のプロフィール写真" class="profile-photo">
+      </div>
+
+      <div class="profile-main">
+        <h2>太田 鉄也</h2>
+        <p class="catchcopy">
+          介護の現場で23年、人と向き合ってきた経験を活かし、Web制作とプログラミングを学習中。
+        </p>
+        <p class="lead">北海道小樽市出身です。大原簿記専門学校 札幌校を卒業し、現在はWeb制作やプログラミングを学んでいます。</p>
+        <ul class="profile-points">
+          <li>介護経験 約23年</li>
+          <li>介護支援専門員 約10年</li>
+          <li>Web制作を学習中</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="tab-status" id="tab-status" aria-live="polite">
+      <strong>プロフィール</strong>
+      <span>基本情報、写真、強み、自己紹介をまとめています。</span>
+    </div>
+
+    <div class="tab-panels">
+      <div class="tab-panel is-active" id="profile-tab" role="tabpanel" aria-labelledby="profile-tab-button">
+        <section class="content-block">
+          <h2>基本情報</h2>
+          <table>
+            <tr>
+              <th>学校</th>
+              <td>大原簿記専門学校 札幌校 卒業</td>
+            </tr>
+            <tr>
+              <th>出身</th>
+              <td>北海道小樽市</td>
+            </tr>
+            <tr>
+              <th>資格</th>
+              <td>簿記2級、電卓検定2級、普通自動車第一種免許、介護福祉士、介護支援専門員</td>
+            </tr>
+            <tr>
+              <th>趣味</th>
+              <td>映画鑑賞、音楽鑑賞、ゲーム、野球、野球観戦、旅行、海外旅行</td>
+            </tr>
+            <tr>
+              <th>ゲーム</th>
+              <td>FPSゲーム、レトロゲーム</td>
+            </tr>
+            <tr>
+              <th>野球観戦</th>
+              <td>プロ野球、メジャーリーグ</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="content-block image-story-block">
+          <h2>ルーツとこれからの挑戦</h2>
+          <div class="story-carousel" aria-label="ルーツと挑戦の画像ギャラリー">
+            <div class="story-slides">
+              <figure class="story-slide is-active">
+                <img src="otaru-canal.png" alt="小樽運河をイメージした写真風画像">
+                <figcaption>
+                  <strong>北海道小樽市</strong>
+                  <span>自分の原点。これまでの歩みを支えてきた場所。</span>
+                </figcaption>
+              </figure>
+              <figure class="story-slide">
+                <img src="story-otaru-learning.png" alt="小樽の風景と学習机を組み合わせた画像">
+                <figcaption>
+                  <strong>小樽から新しい挑戦へ</strong>
+                  <span>原点を大切にしながら、Web制作の学習へ進んでいること。</span>
+                </figcaption>
+              </figure>
+              <figure class="story-slide">
+                <img src="story-programming-desk.png" alt="プログラミング学習をしている机の画像">
+                <figcaption>
+                  <strong>プログラミング学習</strong>
+                  <span>焦らず、基本から一つずつ積み重ねていること。</span>
+                </figcaption>
+              </figure>
+              <figure class="story-slide">
+                <img src="story-care-tech.png" alt="介護経験とデジタルツールを組み合わせた画像">
+                <figcaption>
+                  <strong>介護経験を活かす</strong>
+                  <span>現場で感じた不便さを、使いやすい仕組み作りにつなげたいこと。</span>
+                </figcaption>
+              </figure>
+              <figure class="story-slide">
+                <img src="image-coding.svg" alt="プログラミング学習をイメージした画像">
+                <figcaption>
+                  <strong>これからの制作</strong>
+                  <span>学んだことを形にし、役に立つものを作っていくこと。</span>
+                </figcaption>
+              </figure>
+            </div>
+            <button class="story-arrow story-arrow-prev" type="button" aria-label="前の画像を表示">‹</button>
+            <button class="story-arrow story-arrow-next" type="button" aria-label="次の画像を表示">›</button>
+            <div class="story-dots" aria-label="画像の位置">
+              <button class="story-dot is-active" type="button" aria-label="1枚目を表示"></button>
+              <button class="story-dot" type="button" aria-label="2枚目を表示"></button>
+              <button class="story-dot" type="button" aria-label="3枚目を表示"></button>
+              <button class="story-dot" type="button" aria-label="4枚目を表示"></button>
+              <button class="story-dot" type="button" aria-label="5枚目を表示"></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-block highlight-block">
+          <h2>3つの強み</h2>
+          <div class="strength-grid">
+            <div class="strength-card">
+              <h3>相手の立場で考える</h3>
+              <p>介護の現場で、相手が何を考えているのかを想像しながら関わることを大切にしてきました。</p>
+            </div>
+            <div class="strength-card">
+              <h3>気配りを大切にする</h3>
+              <p>声かけや送迎、レクリエーションなどを通して、安心してもらえる関わりを意識してきました。</p>
+            </div>
+            <div class="strength-card">
+              <h3>新しいことに挑戦する</h3>
+              <p>40代からプログラミングを学び、これまでの経験を新しい分野でも活かせるように挑戦しています。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-block">
+          <h2>自己紹介</h2>
+          <div class="readable-text">
+            <p class="key-message">介護の現場で培った「相手の立場で考える力」を、これからのWeb制作やプログラミング学習にも活かしていきたいです。</p>
+            <p>
+              はじめまして。太田鉄也です。北海道小樽市出身で、大原簿記専門学校 札幌校を卒業しました。
+              小樽で過ごした時間や学生時代の経験は、今の自分の土台になっています。
+            </p>
+            <p>
+              学生時代は小学校3年生から高校3年生まで野球を続け、高校では硬式野球部でファーストを守っていました。
+              野球を通して、続けること、チームで動くこと、最後まで諦めないことを学びました。
+            </p>
+            <p>
+              その後は介護の仕事に進み、約23年間、利用者さんやご家族と向き合ってきました。
+              相手が何を感じ、何に困っているのかを考えながら声をかけることを大切にしてきました。
+            </p>
+            <p>
+              現在は、これからの人生をより良くするために、Web制作やプログラミングを学んでいます。
+              介護経験で身につけた気配りや観察力を、使う人にとってわかりやすい画面作りに活かしていきたいです。
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="tab-panel" id="history-tab" role="tabpanel" aria-labelledby="history-tab-button" hidden>
+        <section class="content-block">
+          <h2>経歴</h2>
+          <table>
+            <tr>
+              <th>出身</th>
+              <td>北海道小樽市</td>
+            </tr>
+            <tr>
+              <th>学歴</th>
+              <td>大原簿記専門学校 札幌校 卒業</td>
+            </tr>
+            <tr>
+              <th>資格</th>
+              <td>簿記2級、電卓検定2級、普通自動車第一種免許、介護福祉士、介護支援専門員</td>
+            </tr>
+            <tr>
+              <th>介護職</th>
+              <td>
+                介護の仕事には、トータルで約23年間携わっています。
+                デイケアサービスで約5年間勤務しました。
+                その後、介護福祉士に合格し、グループホーム、小規模多機能型施設、老人保健施設などで経験を積みました。
+              </td>
+            </tr>
+            <tr>
+              <th>ケアマネ</th>
+              <td>
+                介護支援専門員に合格後、約10年間ケアマネジャーとして従事しています。
+                介護の現場と相談支援の経験を通して、人と向き合うことの大切さを学んできました。
+              </td>
+            </tr>
+            <tr>
+              <th>仕事で学んだこと</th>
+              <td>
+                利用者さんから「ありがとう」と言われたときに、大きなやりがいを感じてきました。
+                認知症の方と関わる中では、こちらの考えを押し付けるのではなく、相手が何を考えているのかを想像しながら対応することを大切にしてきました。
+              </td>
+            </tr>
+            <tr>
+              <th>強み</th>
+              <td>
+                相手の立場で物事を考え、気配りをしながら行動することです。
+                レクリエーションや送迎、拒否のある方への声かけなどでも、利用者さんに安心してもらえる関わりを意識してきました。
+              </td>
+            </tr>
+            <tr>
+              <th>転機</th>
+              <td>
+                40代に入り、これからの人生を考える中で「今のままで本当にいいのか」と感じるようになりました。
+                YouTubeでプログラミングの動画を見たことをきっかけに、新しいことへ挑戦し、Web制作やプログラミングを学ぶようになりました。
+              </td>
+            </tr>
+            <tr>
+              <th>野球経験</th>
+              <td>小学校3年生から高校3年生まで野球を経験。高校時代は硬式野球部で、ポジションはファースト。</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="content-block">
+          <h2>これまでの歩み</h2>
+          <ol class="timeline">
+            <li>
+              <strong>小樽で育ち、野球に打ち込む</strong>
+              <span>学生時代は野球を通して、継続することや仲間と頑張ることを学びました。</span>
+            </li>
+            <li>
+              <strong>専門学校で資格取得に取り組む</strong>
+              <span>簿記や電卓、公務員試験の勉強に取り組み、学ぶことの大切さを経験しました。</span>
+            </li>
+            <li>
+              <strong>介護の現場で23年、人と向き合う</strong>
+              <span>介護職・介護福祉士・介護支援専門員として、利用者さんやご家族と関わり、人の立場に立つことを学びました。</span>
+            </li>
+            <li>
+              <strong>40代からプログラミングに挑戦</strong>
+              <span>このままでいいのかという思いから、人生を変えるために新しい分野へ挑戦しています。</span>
+            </li>
+            <li>
+              <strong>介護経験を活かした開発へ</strong>
+              <span>将来的には、現場経験を活かし、介護の仕事を支えるソフト開発にも挑戦したいです。</span>
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <div class="tab-panel" id="learning-tab" role="tabpanel" aria-labelledby="learning-tab-button" hidden>
+        <section class="content-block vision-block">
+          <h2>プログラミングを学ぶ理由</h2>
+          <div class="readable-text">
+            <p class="key-message">将来の選択肢を広げ、市場価値の高い人材を目指すために、Web制作とプログラミングを学んでいます。</p>
+            <p>
+              介護の仕事を長く続け、介護支援専門員としても働いてきました。
+              利用者さんやご家族と向き合う仕事にやりがいを感じる一方で、40代に入り、これからの働き方や成長について考えるようになりました。
+            </p>
+            <p>
+              10年後、20年後に自分の人生を振り返ったとき、「あのとき挑戦しておけばよかった」と後悔したくありません。
+              これまでの経験があるからこそ、今度は途中で諦めず、学んだことを形にしたいと考えています。
+            </p>
+            <p>
+              プログラミングを学ぶ理由は、将来の選択肢を広げるためです。
+              ただ技術を覚えるだけではなく、使う人にとってわかりやすく、役に立つものを作れる人を目指しています。
+            </p>
+            <p>
+              特に、介護の現場で働く人を支えるソフト開発や、業務改善につながるサービス作りに関心があります。
+              現場で感じてきた不便さを、これからの学習や制作に活かしていきたいです。
+            </p>
+          </div>
+        </section>
+
+        <section class="content-block">
+          <h2>これから</h2>
+          <div class="future-grid">
+            <article>
+              <h3>働き方を変える</h3>
+              <p>Web制作やプログラミングの学習を通して、将来の選択肢を広げ、市場価値の高い人材を目指したいです。</p>
+            </article>
+            <article>
+              <h3>介護経験を開発に活かす</h3>
+              <p>約23年の介護経験を活かし、将来的には介護の現場を支えるソフト開発にも挑戦したいです。</p>
+            </article>
+            <article>
+              <h3>世界を見て知見を広げる</h3>
+              <p>国内外のさまざまな土地を訪れ、いつかフィンランドでオーロラを見ることも目標の一つです。</p>
+            </article>
+          </div>
+          <p class="future-note">
+            これまでの経歴は、決して順調なことばかりではありませんでした。
+            それでも、ありのままの自分を受け止めながら、素直に学び続ける姿勢を大切にしたいです。
+          </p>
+        </section>
+
+        <section class="content-block skill-block">
+          <h2>学習しているスキル</h2>
+          <p>
+            Webページがどのように作られているのかを理解するために、まずは基本となるHTML、CSS、JavaScriptを中心に学んでいます。
+            まだ学習中ですが、少しずつ「読むだけ」ではなく「自分で作って試す」ことを大切にしています。
+          </p>
+          <div class="skill-grid">
+            <article>
+              <h3>HTML</h3>
+              <p>文章、見出し、画像、表など、ページの内容を組み立てるための言語として学んでいます。</p>
+            </article>
+            <article>
+              <h3>CSS</h3>
+              <p>色、余白、文字の大きさ、スマートフォン対応など、見やすい画面に整える方法を学んでいます。</p>
+            </article>
+            <article>
+              <h3>JavaScript</h3>
+              <p>タブの切り替えやボタン操作など、ページに動きをつけるための基本を学んでいます。</p>
+            </article>
+            <article>
+              <h3>Git・GitHub</h3>
+              <p>作ったファイルを記録し、変更の履歴を残しながら制作を進める方法を学んでいます。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-block goal-block">
+          <h2>介護経験を活かして挑戦したいこと</h2>
+          <p>
+            介護の現場では、記録、情報共有、予定調整、家族や関係機関との連絡など、
+            利用者さんと向き合う時間以外にも多くの業務があります。
+            そうした現場の負担を少しでも減らし、働く人が利用者さんに向き合う時間を増やせるような仕組みに関心があります。
+          </p>
+          <div class="goal-grid">
+            <article>
+              <h3>介護記録をわかりやすくする</h3>
+              <p>日々の記録を入力しやすく、あとから確認しやすい形に整理できるツールを作ってみたいです。</p>
+            </article>
+            <article>
+              <h3>情報共有をスムーズにする</h3>
+              <p>申し送りや利用者さんの変化を、職員同士でわかりやすく共有できる仕組みに関心があります。</p>
+            </article>
+            <article>
+              <h3>予定や業務を見える化する</h3>
+              <p>通院、面談、サービス調整、書類作成などの予定を整理し、抜けや漏れを減らせる画面を考えたいです。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="message-block">
+          <span>My Motto</span>
+          <p>自分に正直に、素直に学び、諦めずに人生を変えていく。</p>
+        </section>
+
+        <section class="content-block portfolio-block">
+          <h2>制作物・ポートフォリオ</h2>
+          <div class="portfolio-card">
+            <div>
+              <span class="portfolio-label">Portfolio 01</span>
+              <h3>プロフィールホームページ</h3>
+              <p>
+                自分の経歴、強み、趣味、学習目標を1ページにまとめた自己紹介サイトです。
+                HTMLで内容を作り、CSSで見た目を整え、JavaScriptでタブ切り替えとページ上部へ戻るボタンを実装しました。
+              </p>
+            </div>
+            <ul class="portfolio-points">
+              <li>自分の経験を読みやすく整理</li>
+              <li>タブで情報を切り替えられる構成</li>
+              <li>スマートフォンでも見やすい表示</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="content-block intent-block">
+          <h2>このサイトを作った理由</h2>
+          <div class="readable-text">
+            <p class="key-message">このサイトは、Web制作の学習成果として、自分のことをわかりやすく伝えるために作りました。</p>
+            <p>
+              初めて見る人にも、自分がどのような経験をしてきたのか、今なぜプログラミングを学んでいるのかが伝わるように意識しました。
+              文章をただ並べるだけではなく、プロフィール、経歴、学習目標、好きなことに分けることで、読みたい情報を探しやすくしています。
+            </p>
+            <p>
+              工夫した点は、介護の経験とこれから学びたいITの分野をつなげて説明したことです。
+              「人と向き合ってきた経験」を、今後は「使う人にとってわかりやすい画面作り」に活かしていきたいと考えています。
+            </p>
+          </div>
+        </section>
+
+        <section class="content-block">
+          <h2>制作・学習活動</h2>
+          <table>
+            <tr>
+              <th>制作</th>
+              <td>
+                プロフィールホームページを制作。
+                HTMLとCSSを使い、自分の経歴・趣味・写真を掲載した自己紹介ページを作成しました。
+              </td>
+            </tr>
+            <tr>
+              <th>学習中</th>
+              <td>
+                プログラミングやWeb制作を学習中です。
+                自分の人となりが伝わるページ作りを目標にしています。
+              </td>
+            </tr>
+            <tr>
+              <th>今後</th>
+              <td>
+                JavaScriptを使った動きのあるページや、映画・音楽・ゲーム・野球・旅行など、
+                自分の好きなことを紹介できるサイト制作にも挑戦したいです。
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+
+      <div class="tab-panel" id="interest-tab" role="tabpanel" aria-labelledby="interest-tab-button" hidden>
+        <section class="content-block">
+          <h2>好きなこと</h2>
+          <div class="interest-grid">
+            <article class="interest-card">
+              <h3>映画</h3>
+              <p>
+                映画が好きになったきっかけは、ジャッキー・チェンのカンフー映画や「ターミネーター」です。
+                アクション、SF、ヒューマンドラマなど幅広く観ますが、特にスピード感のある作品が好きです。
+              </p>
+            </article>
+            <article class="interest-card">
+              <h3>音楽</h3>
+              <p>
+                音楽はJ-POP、韓国の音楽、洋楽まで幅広く聴きます。
+                R&amp;B、ヒップホップ、ロックなど、ジャンルを決めすぎず、その時の気分に合う曲を楽しんでいます。
+              </p>
+            </article>
+            <article class="interest-card">
+              <h3>ゲーム</h3>
+              <p>
+                FPSではPUBGが好きで、仲間とチームを組み、オンラインで協力しながら遊ぶ時間が楽しいです。
+                レトロゲームでは、くにおくんシリーズ、グラディウス、ドラゴンクエストシリーズが印象に残っています。
+              </p>
+            </article>
+            <article class="interest-card">
+              <h3>野球</h3>
+              <p>
+                野球は小学校3年生から高校3年生まで続け、高校時代は硬式野球部でファーストを守っていました。
+                今は観戦が中心で、日本ハムやメジャーリーグにも注目しています。
+                一つのプレーで流れが変わるところに、野球の面白さを感じます。
+              </p>
+            </article>
+            <article class="interest-card">
+              <h3>旅行</h3>
+              <p>
+                海外ではフィリピンやグアムに行った経験があります。
+                日本とは違う街の雰囲気や価値観に触れたことが、自分の視野を広げるきっかけになりました。
+                これからも国内外のいろいろな場所を訪れてみたいです。
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="content-block contact-block">
+      <h2>公開について</h2>
+      <p>
+        現在は学習用のプロフィールページとして作成しているため、個人の連絡先は掲載していません。
+        公開するときは、目的に合わせて必要な連絡手段だけを整理して掲載します。
+      </p>
+      <ul class="contact-list">
+        <li><strong>連絡先</strong><span>公開目的に合わせて掲載</span></li>
+        <li><strong>GitHub</strong><span>作品公開に合わせて掲載予定</span></li>
+        <li><strong>SNS</strong><span>目的が決まった場合のみ掲載</span></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Tetsuya Ota Profile</p>
+    </footer>
+  </main>
+  <button class="back-to-top" type="button" aria-label="ページの一番上に戻る">↑ 上へ</button>
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabPanels = document.querySelectorAll(".tab-panel");
+    const backToTopButton = document.querySelector(".back-to-top");
+    const tabStatus = document.getElementById("tab-status");
+    const storySlides = document.querySelectorAll(".story-slide");
+    const storyDots = document.querySelectorAll(".story-dot");
+    const storyPrevButton = document.querySelector(".story-arrow-prev");
+    const storyNextButton = document.querySelector(".story-arrow-next");
+    let currentStoryIndex = 0;
+    const tabDescriptions = {
+      "profile-tab": {
+        title: "プロフィール",
+        text: "基本情報、写真、強み、自己紹介をまとめています。"
+      },
+      "history-tab": {
+        title: "経歴・歩み",
+        text: "これまでの仕事、資格、学んできたことを時系列で確認できます。"
+      },
+      "learning-tab": {
+        title: "学習・これから",
+        text: "プログラミングを学ぶ理由、今後の目標、制作活動をまとめています。"
+      },
+      "interest-tab": {
+        title: "好きなこと",
+        text: "映画、音楽、ゲーム、野球、旅行など、人柄が伝わる趣味を紹介しています。"
+      }
+    };
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const targetId = button.dataset.tab;
+        const description = tabDescriptions[targetId];
+
+        tabButtons.forEach((item) => {
+          item.classList.remove("is-active");
+          item.setAttribute("aria-selected", "false");
+          item.setAttribute("tabindex", "-1");
+        });
+        tabPanels.forEach((panel) => {
+          panel.classList.remove("is-active");
+          panel.hidden = true;
+        });
+
+        button.classList.add("is-active");
+        button.setAttribute("aria-selected", "true");
+        button.removeAttribute("tabindex");
+        const targetPanel = document.getElementById(targetId);
+        targetPanel.classList.add("is-active");
+        targetPanel.hidden = false;
+
+        tabStatus.innerHTML = `<strong>${description.title}</strong><span>${description.text}</span>`;
+        tabStatus.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      });
+    });
+
+    function showStorySlide(index) {
+      currentStoryIndex = (index + storySlides.length) % storySlides.length;
+
+      storySlides.forEach((slide, slideIndex) => {
+        slide.classList.toggle("is-active", slideIndex === currentStoryIndex);
+      });
+
+      storyDots.forEach((dot, dotIndex) => {
+        dot.classList.toggle("is-active", dotIndex === currentStoryIndex);
+      });
+    }
+
+    storyPrevButton.addEventListener("click", () => {
+      showStorySlide(currentStoryIndex - 1);
+    });
+
+    storyNextButton.addEventListener("click", () => {
+      showStorySlide(currentStoryIndex + 1);
+    });
+
+    storyDots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        showStorySlide(index);
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      backToTopButton.classList.toggle("is-visible", window.scrollY > 300);
+    });
+
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="プログラミング学習をイメージした画像">
+  <rect width="900" height="520" fill="#eef4f1"/>
+  <rect x="95" y="92" width="710" height="340" rx="10" fill="#243241"/>
+  <rect x="125" y="122" width="650" height="255" fill="#101820"/>
+  <rect x="260" y="432" width="380" height="35" fill="#b8c3c7"/>
+  <rect x="215" y="467" width="470" height="22" rx="11" fill="#8b999f"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="22">
+    <text x="155" y="170" fill="#80d6ff">&lt;profile&gt;</text>
+    <text x="185" y="210" fill="#f9d56e">const dream</text>
+    <text x="350" y="210" fill="#ffffff">=</text>
+    <text x="380" y="210" fill="#7ee787">"freelance engineer"</text>
+    <text x="185" y="250" fill="#f9d56e">const roots</text>
+    <text x="350" y="250" fill="#ffffff">=</text>
+    <text x="380" y="250" fill="#7ee787">"care experience"</text>
+    <text x="185" y="290" fill="#ff8ba7">function</text>
+    <text x="300" y="290" fill="#80d6ff">changeLife</text>
+    <text x="430" y="290" fill="#ffffff">()</text>
+    <text x="185" y="330" fill="#ffffff">{ learn(); build(); keepGoing(); }</text>
+    <text x="155" y="362" fill="#80d6ff">&lt;/profile&gt;</text>
+  </g>
+  <circle cx="705" cy="105" r="7" fill="#ff6b6b"/>
+  <circle cx="728" cy="105" r="7" fill="#ffd166"/>
+  <circle cx="751" cy="105" r="7" fill="#66d18f"/>
+  <path d="M70 440 C185 405 285 405 390 425 C520 450 640 455 830 420 L830 520 L70 520 Z" fill="#d6e6df"/>
+  <text x="92" y="55" font-family="Georgia, serif" font-size="38" fill="#243241">Challenge</text>
+  <text x="94" y="82" font-family="Arial, sans-serif" font-size="18" fill="#48606a">learning / coding / new career</text>
+</svg>
