@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="太田鉄也のプロフィールサイト。北海道小樽市でのルーツ、介護経験、Web制作とプログラミング学習への挑戦をまとめています。">
   <title>太田鉄也 プロフィール</title>
-  <link rel="stylesheet" href="style.css?v=20260716-1">
+  <link rel="stylesheet" href="style.css?v=20260717-1">
 </head>
 <body>
   <main class="page">
@@ -46,6 +47,11 @@
           <li>Web制作を学習中</li>
         </ul>
       </div>
+    </section>
+
+    <section class="share-note" aria-label="このページで伝えたいこと">
+      <strong>このページで見ていただきたいこと</strong>
+      <span>介護の現場で人と向き合ってきた経験と、Web制作・プログラミングへ挑戦している現在の歩みをまとめています。</span>
     </section>
 
     <div class="tab-status" id="tab-status" aria-live="polite">
@@ -367,20 +373,38 @@
 
         <section class="content-block portfolio-block">
           <h2>制作物・ポートフォリオ</h2>
-          <div class="portfolio-card">
-            <div>
-              <span class="portfolio-label">Portfolio 01</span>
-              <h3>プロフィールホームページ</h3>
-              <p>
-                自分の経歴、強み、趣味、学習目標を1ページにまとめた自己紹介サイトです。
-                HTMLで内容を作り、CSSで見た目を整え、JavaScriptでタブ切り替えとページ上部へ戻るボタンを実装しました。
-              </p>
+          <div class="portfolio-list">
+            <div class="portfolio-card">
+              <div>
+                <span class="portfolio-label">Portfolio 01</span>
+                <h3>プロフィールホームページ</h3>
+                <p>
+                  自分の経歴、強み、趣味、学習目標を1ページにまとめた自己紹介サイトです。
+                  HTMLで内容を作り、CSSで見た目を整え、JavaScriptでタブ切り替えとページ上部へ戻るボタンを実装しました。
+                </p>
+              </div>
+              <ul class="portfolio-points">
+                <li>自分の経験を読みやすく整理</li>
+                <li>タブで情報を切り替えられる構成</li>
+                <li>スマートフォンでも見やすい表示</li>
+              </ul>
             </div>
-            <ul class="portfolio-points">
-              <li>自分の経験を読みやすく整理</li>
-              <li>タブで情報を切り替えられる構成</li>
-              <li>スマートフォンでも見やすい表示</li>
-            </ul>
+
+            <div class="portfolio-card">
+              <div>
+                <span class="portfolio-label">Portfolio 02</span>
+                <h3>GitHub Pagesでの公開</h3>
+                <p>
+                  作成したプロフィールサイトをGitHubに管理し、GitHub Pagesで公開しました。
+                  PCだけでなくスマートフォンでも見やすいように、公開後の表示確認と微調整も行っています。
+                </p>
+              </div>
+              <ul class="portfolio-points">
+                <li>GitHubでファイルを管理</li>
+                <li>公開URLで誰でも確認可能</li>
+                <li>QRコードからスマホで確認可能</li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -475,15 +499,23 @@
 
     <section class="content-block contact-block">
       <h2>公開について</h2>
-      <p>
-        現在は学習用のプロフィールページとして作成しているため、個人の連絡先は掲載していません。
-        公開するときは、目的に合わせて必要な連絡手段だけを整理して掲載します。
-      </p>
-      <ul class="contact-list">
-        <li><strong>連絡先</strong><span>公開目的に合わせて掲載</span></li>
-        <li><strong>GitHub</strong><span>作品公開に合わせて掲載予定</span></li>
-        <li><strong>SNS</strong><span>目的が決まった場合のみ掲載</span></li>
-      </ul>
+      <div class="public-info">
+        <div>
+          <p>
+            このページは、学習成果とプロフィールを伝えるために公開しています。
+            個人の連絡先やSNSは、プライバシー保護のため掲載していません。
+          </p>
+          <ul class="contact-list">
+            <li><strong>公開目的</strong><span>プロフィールと学習成果の共有</span></li>
+            <li><strong>連絡先</strong><span>このページでは非公開</span></li>
+            <li><strong>SNS</strong><span>現在は掲載していません</span></li>
+          </ul>
+        </div>
+        <div class="qr-card">
+          <img src="profile-qr.png" alt="プロフィールサイト公開URLのQRコード">
+          <a href="https://tetu5473.github.io/profile/">公開ページを開く</a>
+        </div>
+      </div>
     </section>
 
     <footer>

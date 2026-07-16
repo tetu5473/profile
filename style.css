@@ -229,6 +229,26 @@ body {
   cursor: pointer;
 }
 
+.share-note {
+  display: grid;
+  gap: 3px;
+  margin: 18px 0 0;
+  padding: 14px 16px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+}
+
+.share-note strong {
+  color: #17476d;
+  font-size: 18px;
+}
+
+.share-note span {
+  font-size: 16px;
+}
+
 .tab-button:hover {
   border-color: #c3d2df;
   background: #fff;
@@ -569,6 +589,11 @@ p {
   font-size: 16px;
 }
 
+.portfolio-list {
+  display: grid;
+  gap: 14px;
+}
+
 .portfolio-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
@@ -675,6 +700,13 @@ p {
   color: #334155;
 }
 
+.public-info {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 18px;
+  align-items: start;
+}
+
 .contact-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -701,6 +733,33 @@ p {
 .contact-list span {
   color: var(--muted);
   font-size: 15px;
+}
+
+.qr-card {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.qr-card img {
+  width: 132px;
+  height: 132px;
+}
+
+.qr-card a {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.qr-card a:hover {
+  text-decoration: underline;
 }
 
 .message-block {
@@ -893,6 +952,7 @@ footer {
   .goal-grid,
   .skill-grid,
   .portfolio-card,
+  .public-info,
   .contact-list {
     grid-template-columns: 1fr;
   }
@@ -921,6 +981,19 @@ footer {
   }
 
   .tab-status span {
+    font-size: 15px;
+  }
+
+  .share-note {
+    margin-top: 14px;
+    padding: 12px;
+  }
+
+  .share-note strong {
+    font-size: 17px;
+  }
+
+  .share-note span {
     font-size: 15px;
   }
 
@@ -1004,6 +1077,11 @@ footer {
 
   .key-message {
     padding: 11px 12px;
+  }
+
+  .qr-card img {
+    width: 124px;
+    height: 124px;
   }
 
   table,
