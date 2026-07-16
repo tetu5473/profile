@@ -31,10 +31,18 @@ https://tetu5473.github.io/profile/
 - JavaScript
 - GitHub Pages
 
+## 画像について
+
+- 小樽運河の写真は、Wikimedia Commonsで公開されているパブリックドメイン画像を使用しています。
+- File: Otaru Canal 2009.jpg
+- Author: Komatta
+- Source: https://commons.wikimedia.org/wiki/File:Otaru_Canal_2009.jpg
+
 ## 工夫した点
 
 - タブで情報を切り替えられるようにした
 - 小樽、プログラミング、介護経験を画像カルーセルで表現した
+- 画像が自動で切り替わるようにし、静止画だけに見えない動きを加えた
 - スマートフォンでも読みやすいように余白やボタンサイズを調整した
 - 個人の連絡先やSNSは掲載せず、公開目的を明確にした
 
