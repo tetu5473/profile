@@ -541,6 +541,36 @@ p {
   color: #334155;
 }
 
+.reference-block {
+  padding: 18px;
+  border: 1px solid #d7e0eb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.reference-block p {
+  max-width: 48em;
+  margin: 0 0 12px;
+  color: #334155;
+}
+
+.reference-link {
+  display: inline-block;
+  margin: 2px 0 10px;
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.reference-link:hover {
+  text-decoration: underline;
+}
+
+.reference-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
