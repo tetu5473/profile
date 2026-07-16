@@ -77,6 +77,8 @@ body {
   object-fit: cover;
   object-position: 50% 54%;
   filter: saturate(1.05) contrast(1.02);
+  animation: heroDrift 22s ease-in-out infinite alternate;
+  transform-origin: center;
 }
 
 .otaru-hero::after {
@@ -86,6 +88,23 @@ body {
     linear-gradient(90deg, rgba(19, 44, 67, 0.8) 0%, rgba(19, 44, 67, 0.45) 46%, rgba(19, 44, 67, 0.14) 100%),
     linear-gradient(180deg, rgba(19, 44, 67, 0.08) 0%, rgba(19, 44, 67, 0.35) 100%);
   content: "";
+}
+
+.otaru-hero::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 42%;
+  background:
+    linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.12) 42%, transparent 68%),
+    linear-gradient(80deg, transparent 0%, rgba(255, 255, 255, 0.08) 38%, transparent 62%);
+  background-size: 220% 100%, 180% 100%;
+  content: "";
+  opacity: 0.45;
+  pointer-events: none;
+  animation: waterShimmer 13s ease-in-out infinite;
 }
 
 .otaru-hero-text {
@@ -359,6 +378,7 @@ p {
 
 .story-slide.is-active {
   display: block;
+  animation: slideFade 0.35s ease;
 }
 
 .story-slide img {
@@ -367,6 +387,11 @@ p {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-bottom: 1px solid var(--line);
+}
+
+.story-slide.is-active img {
+  animation: imageDrift 18s ease-in-out infinite alternate;
+  transform-origin: center;
 }
 
 .story-slide figcaption {
@@ -896,6 +921,59 @@ footer {
 
 .back-to-top:hover {
   filter: brightness(1.05);
+}
+
+@keyframes heroDrift {
+  from {
+    transform: scale(1.02) translate3d(-0.5%, -0.3%, 0);
+  }
+
+  to {
+    transform: scale(1.08) translate3d(0.8%, 0.4%, 0);
+  }
+}
+
+@keyframes waterShimmer {
+  0% {
+    background-position: 0% 50%, 100% 50%;
+  }
+
+  50% {
+    background-position: 85% 50%, 35% 50%;
+  }
+
+  100% {
+    background-position: 160% 50%, 0% 50%;
+  }
+}
+
+@keyframes imageDrift {
+  from {
+    transform: scale(1.01) translate3d(-0.4%, 0, 0);
+  }
+
+  to {
+    transform: scale(1.06) translate3d(0.6%, -0.4%, 0);
+  }
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0.72;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .otaru-hero img,
+  .otaru-hero::before,
+  .story-slide.is-active,
+  .story-slide.is-active img {
+    animation: none;
+  }
 }
 
 @media (max-width: 760px) {
