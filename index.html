@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="太田鉄也のプロフィールサイト。北海道小樽市でのルーツ、介護経験、Web制作とプログラミング学習への挑戦をまとめています。">
+  <meta property="og:title" content="太田鉄也 プロフィール">
+  <meta property="og:description" content="北海道小樽市でのルーツ、介護経験、Web制作とプログラミング学習への挑戦をまとめたプロフィールサイトです。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tetu5473.github.io/profile/">
+  <meta property="og:image" content="https://tetu5473.github.io/profile/otaru-canal-real.jpg">
   <title>太田鉄也 プロフィール</title>
-  <link rel="stylesheet" href="style.css?v=20260717-4">
+  <link rel="stylesheet" href="style.css?v=20260717-5">
 </head>
 <body>
   <main class="page">
@@ -52,6 +57,18 @@
     <section class="share-note" aria-label="このページで伝えたいこと">
       <strong>このページで見ていただきたいこと</strong>
       <span>介護の現場で人と向き合ってきた経験と、Web制作・プログラミングへ挑戦している現在の歩みをまとめています。</span>
+    </section>
+
+    <section class="publish-check" aria-label="公開ページの確認状況">
+      <div>
+        <span class="section-kicker">Checked</span>
+        <h2>公開ページとして見やすい形に調整済み</h2>
+      </div>
+      <ul>
+        <li>PCで読みやすい余白</li>
+        <li>スマートフォンで押しやすいタブ</li>
+        <li>画像が自動で切り替わる表示</li>
+      </ul>
     </section>
 
     <div class="tab-status" id="tab-status" aria-live="polite">
@@ -419,6 +436,22 @@
                 <li>QRコードからスマホで確認可能</li>
               </ul>
             </div>
+
+            <div class="portfolio-card portfolio-card-next">
+              <div>
+                <span class="portfolio-label">Next Work</span>
+                <h3>次に追加予定の制作物</h3>
+                <p>
+                  今後は、学習しながら作ったアプリや小さなツールを、このプロフィールに追加していく予定です。
+                  ただ並べるだけではなく、何を目的に作ったのか、どこを工夫したのかが伝わる形で掲載していきます。
+                </p>
+              </div>
+              <ul class="portfolio-points">
+                <li>アプリの目的を短く説明</li>
+                <li>使った技術を整理</li>
+                <li>画面や操作の工夫を紹介</li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -517,13 +550,18 @@
         <div>
           <p>
             このページは、学習成果とプロフィールを伝えるために公開しています。
-            個人の連絡先やSNSは、プライバシー保護のため掲載していません。
+            個人の連絡先やSNSは、プライバシー保護のため掲載していません。共有するときは、下のボタンまたはQRコードから確認できます。
           </p>
           <ul class="contact-list">
             <li><strong>公開目的</strong><span>プロフィールと学習成果の共有</span></li>
             <li><strong>連絡先</strong><span>このページでは非公開</span></li>
             <li><strong>SNS</strong><span>現在は掲載していません</span></li>
           </ul>
+          <div class="share-actions">
+            <a href="https://tetu5473.github.io/profile/" target="_blank" rel="noopener noreferrer">公開ページを開く</a>
+            <button class="copy-link-button" type="button" data-url="https://tetu5473.github.io/profile/">URLをコピー</button>
+            <span class="copy-status" aria-live="polite"></span>
+          </div>
         </div>
         <div class="qr-card">
           <img src="profile-qr.png" alt="プロフィールサイト公開URLのQRコード">
@@ -547,6 +585,8 @@
     const storyPrevButton = document.querySelector(".story-arrow-prev");
     const storyNextButton = document.querySelector(".story-arrow-next");
     const storyCarousel = document.querySelector(".story-carousel");
+    const copyLinkButton = document.querySelector(".copy-link-button");
+    const copyStatus = document.querySelector(".copy-status");
     const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     let currentStoryIndex = 0;
     let storyAutoTimer;
@@ -665,6 +705,15 @@
         top: 0,
         behavior: "smooth"
       });
+    });
+
+    copyLinkButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(copyLinkButton.dataset.url);
+        copyStatus.textContent = "URLをコピーしました";
+      } catch (error) {
+        copyStatus.textContent = "URL: " + copyLinkButton.dataset.url;
+      }
     });
   </script>
 </body>

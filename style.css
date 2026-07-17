@@ -268,6 +268,53 @@ body {
   font-size: 16px;
 }
 
+.publish-check {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin-top: 14px;
+  padding: 16px;
+  border: 1px solid #cfe0d8;
+  border-radius: 8px;
+  background: #f7fbf8;
+}
+
+.section-kicker {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.publish-check h2 {
+  margin: 0;
+  color: #173f33;
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+.publish-check ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.publish-check li {
+  padding: 7px 10px;
+  border: 1px solid #bdd8cc;
+  border-radius: 8px;
+  background: #fff;
+  color: #2d604e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .tab-button:hover {
   border-color: #c3d2df;
   background: #fff;
@@ -387,6 +434,7 @@ p {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-bottom: 1px solid var(--line);
+  filter: saturate(1.06) contrast(1.03);
 }
 
 .story-slide.is-active img {
@@ -660,6 +708,15 @@ p {
   box-shadow: 0 4px 14px rgba(27, 36, 48, 0.06);
 }
 
+.portfolio-card-next {
+  border-color: #cfe0d8;
+  background: #f8fbf9;
+}
+
+.portfolio-card-next .portfolio-label {
+  color: var(--green);
+}
+
 .portfolio-label {
   display: inline-block;
   margin-bottom: 6px;
@@ -788,6 +845,49 @@ p {
 .contact-list span {
   color: var(--muted);
   font-size: 15px;
+}
+
+.share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.share-actions a,
+.copy-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 14px;
+  border: 1px solid #b8cee1;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--blue);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.copy-link-button {
+  background: #17476d;
+  color: #fff;
+}
+
+.share-actions a:hover,
+.copy-link-button:hover {
+  filter: brightness(1.04);
+}
+
+.copy-status {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .qr-card {
@@ -1054,6 +1154,7 @@ footer {
   }
 
   .profile-points,
+  .publish-check,
   .strength-grid,
   .interest-grid,
   .future-grid,
@@ -1103,6 +1204,24 @@ footer {
 
   .share-note span {
     font-size: 15px;
+  }
+
+  .publish-check {
+    gap: 10px;
+    margin-top: 12px;
+    padding: 12px;
+  }
+
+  .publish-check h2 {
+    font-size: 17px;
+  }
+
+  .publish-check ul {
+    justify-content: flex-start;
+  }
+
+  .publish-check li {
+    font-size: 13px;
   }
 
   .content-block {
@@ -1190,6 +1309,15 @@ footer {
   .qr-card img {
     width: 124px;
     height: 124px;
+  }
+
+  .share-actions {
+    align-items: stretch;
+  }
+
+  .share-actions a,
+  .copy-link-button {
+    width: 100%;
   }
 
   table,
