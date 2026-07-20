@@ -713,6 +713,15 @@ p {
   background: #f8fbf9;
 }
 
+.portfolio-card-app {
+  border-color: #c8d7e5;
+  background: #f7fbff;
+}
+
+.portfolio-card-app .portfolio-label {
+  color: var(--blue);
+}
+
 .portfolio-card-next .portfolio-label {
   color: var(--green);
 }
@@ -734,6 +743,33 @@ p {
 .portfolio-card p {
   margin: 0;
   color: #334155;
+}
+
+.portfolio-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.portfolio-detail-grid div {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.portfolio-detail-grid strong {
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.portfolio-detail-grid span {
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .portfolio-points {
@@ -1160,6 +1196,7 @@ footer {
   .future-grid,
   .goal-grid,
   .skill-grid,
+  .portfolio-detail-grid,
   .portfolio-card,
   .public-info,
   .contact-list {
