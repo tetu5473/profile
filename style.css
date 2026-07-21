@@ -76,8 +76,8 @@ body {
   height: 330px;
   object-fit: cover;
   object-position: 50% 54%;
-  filter: saturate(1.08) contrast(1.04);
-  animation: heroDrift 16s ease-in-out infinite alternate;
+  filter: saturate(1.12) contrast(1.06);
+  animation: heroDrift 14s ease-in-out infinite alternate;
   transform-origin: center;
 }
 
@@ -85,8 +85,8 @@ body {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(19, 44, 67, 0.8) 0%, rgba(19, 44, 67, 0.45) 46%, rgba(19, 44, 67, 0.14) 100%),
-    linear-gradient(180deg, rgba(19, 44, 67, 0.08) 0%, rgba(19, 44, 67, 0.35) 100%);
+    linear-gradient(90deg, rgba(19, 44, 67, 0.78) 0%, rgba(19, 44, 67, 0.42) 45%, rgba(19, 44, 67, 0.1) 100%),
+    linear-gradient(180deg, rgba(19, 44, 67, 0.04) 0%, rgba(19, 44, 67, 0.34) 100%);
   content: "";
 }
 
@@ -98,13 +98,13 @@ body {
   z-index: 1;
   height: 42%;
   background:
-    linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.12) 42%, transparent 68%),
-    linear-gradient(80deg, transparent 0%, rgba(255, 255, 255, 0.08) 38%, transparent 62%);
-  background-size: 220% 100%, 180% 100%;
+    linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.2) 42%, transparent 68%),
+    linear-gradient(80deg, transparent 0%, rgba(255, 255, 255, 0.12) 38%, transparent 62%);
+  background-size: 240% 100%, 190% 100%;
   content: "";
-  opacity: 0.45;
+  opacity: 0.62;
   pointer-events: none;
-  animation: waterShimmer 13s ease-in-out infinite;
+  animation: waterShimmer 9.5s ease-in-out infinite;
 }
 
 .otaru-hero-text {
@@ -419,8 +419,10 @@ p {
 }
 
 .story-slide {
+  position: relative;
   display: none;
   margin: 0;
+  overflow: hidden;
 }
 
 .story-slide.is-active {
@@ -434,12 +436,35 @@ p {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-bottom: 1px solid var(--line);
-  filter: saturate(1.06) contrast(1.03);
+  filter: saturate(1.09) contrast(1.04);
+  transform-origin: center;
 }
 
 .story-slide.is-active img {
-  animation: imageDrift 14s ease-in-out infinite alternate;
-  transform-origin: center;
+  animation: storyImageDrift 11s ease-in-out infinite alternate;
+}
+
+.story-slide:nth-child(2).is-active img {
+  animation-name: storyImageDriftLeft;
+}
+
+.story-slide:nth-child(3).is-active img,
+.story-slide:nth-child(5).is-active img {
+  animation-name: storyImageDriftUp;
+}
+
+.story-slide.is-active::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 78px;
+  left: 0;
+  background:
+    linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.14) 44%, transparent 62%);
+  background-size: 220% 100%;
+  content: "";
+  pointer-events: none;
+  animation: storyLightMove 8.5s ease-in-out infinite;
 }
 
 .story-slide figcaption {
@@ -1218,11 +1243,11 @@ footer {
 
 @keyframes heroDrift {
   from {
-    transform: scale(1.04) translate3d(-1.1%, -0.5%, 0);
+    transform: scale(1.03) translate3d(-1.6%, -0.8%, 0);
   }
 
   to {
-    transform: scale(1.13) translate3d(1.2%, 0.6%, 0);
+    transform: scale(1.16) translate3d(1.5%, 0.9%, 0);
   }
 }
 
@@ -1240,13 +1265,50 @@ footer {
   }
 }
 
-@keyframes imageDrift {
+@keyframes storyImageDrift {
   from {
-    transform: scale(1.02) translate3d(-0.8%, 0, 0);
+    transform: scale(1.02) translate3d(-1.1%, -0.4%, 0);
   }
 
   to {
-    transform: scale(1.09) translate3d(0.9%, -0.5%, 0);
+    transform: scale(1.12) translate3d(1.2%, 0.6%, 0);
+  }
+}
+
+@keyframes storyImageDriftLeft {
+  from {
+    transform: scale(1.03) translate3d(1.2%, -0.4%, 0);
+  }
+
+  to {
+    transform: scale(1.13) translate3d(-1.2%, 0.5%, 0);
+  }
+}
+
+@keyframes storyImageDriftUp {
+  from {
+    transform: scale(1.02) translate3d(-0.5%, 0.8%, 0);
+  }
+
+  to {
+    transform: scale(1.12) translate3d(0.6%, -1.1%, 0);
+  }
+}
+
+@keyframes storyLightMove {
+  0% {
+    background-position: -130% 50%;
+    opacity: 0;
+  }
+
+  18%,
+  62% {
+    opacity: 0.56;
+  }
+
+  100% {
+    background-position: 160% 50%;
+    opacity: 0;
   }
 }
 
@@ -1280,6 +1342,7 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .otaru-hero img,
   .otaru-hero::before,
+  .story-slide.is-active::after,
   .story-slide.is-active,
   .story-slide.is-active img,
   .app-flow::after {
@@ -1447,6 +1510,10 @@ footer {
   .story-slide figcaption {
     min-height: 92px;
     padding: 12px 52px 18px;
+  }
+
+  .story-slide.is-active::after {
+    bottom: 92px;
   }
 
   .story-slide strong {
