@@ -745,6 +745,30 @@ p {
   color: #334155;
 }
 
+.portfolio-preview {
+  margin: 0 0 14px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.portfolio-preview img {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  object-position: top center;
+  border-bottom: 1px solid #c8d7e5;
+}
+
+.portfolio-preview figcaption {
+  padding: 10px 12px;
+  color: #445466;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .portfolio-detail-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -767,6 +791,27 @@ p {
 }
 
 .portfolio-detail-grid span {
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.portfolio-link-panel {
+  display: grid;
+  gap: 4px;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #bdd8cc;
+  border-radius: 8px;
+  background: #f8fbf9;
+}
+
+.portfolio-link-panel strong {
+  color: var(--green);
+  font-size: 14px;
+}
+
+.portfolio-link-panel span {
   color: #334155;
   font-size: 14px;
   line-height: 1.6;
