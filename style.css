@@ -755,18 +755,6 @@ p {
   box-shadow: 0 10px 24px rgba(27, 36, 48, 0.08);
 }
 
-.portfolio-preview::before {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  height: 58px;
-  background: linear-gradient(180deg, transparent 0%, rgba(247, 251, 255, 0.92) 100%);
-  content: "";
-  pointer-events: none;
-}
-
 .portfolio-preview img {
   display: block;
   width: 100%;
@@ -774,31 +762,6 @@ p {
   object-fit: cover;
   object-position: top center;
   border-bottom: 1px solid #c8d7e5;
-}
-
-.portfolio-motion-line {
-  position: absolute;
-  right: 12px;
-  bottom: 48px;
-  left: 12px;
-  z-index: 2;
-  height: 3px;
-  border-radius: 999px;
-  background: rgba(36, 95, 143, 0.16);
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.portfolio-motion-line::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -35%;
-  width: 35%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, transparent 0%, rgba(55, 123, 98, 0.95) 52%, transparent 100%);
-  content: "";
-  animation: reportLineFlow 5.8s ease-in-out infinite;
 }
 
 .portfolio-preview figcaption {
@@ -809,6 +772,113 @@ p {
   color: #445466;
   font-size: 14px;
   line-height: 1.6;
+}
+
+.portfolio-preview-showcase img {
+  border-bottom: 0;
+}
+
+.app-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 14px;
+  align-items: center;
+  padding: 16px;
+  background:
+    linear-gradient(135deg, #f8fbff 0%, #edf7f3 100%);
+}
+
+.app-phone {
+  padding: 10px;
+  border: 1px solid rgba(29, 62, 88, 0.28);
+  border-radius: 20px;
+  background: #15344e;
+  box-shadow: 0 16px 28px rgba(21, 52, 78, 0.18);
+}
+
+.app-phone-bar {
+  width: 48px;
+  height: 4px;
+  margin: 0 auto 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.app-phone img {
+  max-height: 250px;
+  border-radius: 12px;
+}
+
+.app-showcase-copy {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid rgba(55, 123, 98, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.app-showcase-copy strong {
+  color: #15344e;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.app-showcase-copy span {
+  color: #405367;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.app-flow {
+  position: relative;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  align-items: center;
+}
+
+.app-flow::before {
+  position: absolute;
+  top: 50%;
+  right: 9%;
+  left: 9%;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(55, 123, 98, 0.26);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.app-flow::after {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #377b62;
+  box-shadow: 0 0 0 6px rgba(55, 123, 98, 0.13);
+  content: "";
+  transform: translate(-50%, -50%);
+  animation: appFlowDot 5.2s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+}
+
+.app-flow span {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-height: 38px;
+  place-items: center;
+  border: 1px solid rgba(55, 123, 98, 0.24);
+  border-radius: 999px;
+  background: #fff;
+  color: #1d3e58;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 8px 16px rgba(27, 36, 48, 0.06);
 }
 
 .portfolio-detail-grid {
@@ -1190,14 +1260,20 @@ footer {
   }
 }
 
-@keyframes reportLineFlow {
-  0% {
-    transform: translateX(0);
+@keyframes appFlowDot {
+  0%,
+  18% {
+    left: 9%;
   }
 
-  48%,
+  43%,
+  58% {
+    left: 50%;
+  }
+
+  83%,
   100% {
-    transform: translateX(385%);
+    left: 91%;
   }
 }
 
@@ -1206,7 +1282,7 @@ footer {
   .otaru-hero::before,
   .story-slide.is-active,
   .story-slide.is-active img,
-  .portfolio-motion-line::after {
+  .app-flow::after {
     animation: none;
   }
 }
@@ -1446,10 +1522,22 @@ footer {
     max-height: 220px;
   }
 
-  .portfolio-motion-line {
-    right: 8px;
-    bottom: 50px;
-    left: 8px;
+  .app-showcase {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+
+  .app-phone img {
+    max-height: 230px;
+  }
+
+  .app-showcase-copy {
+    padding: 12px;
+  }
+
+  .app-flow span {
+    min-height: 36px;
+    font-size: 13px;
   }
 
   .qr-card img {
