@@ -224,7 +224,11 @@ body {
   margin: 14px 0 0;
 }
 
-.profile-actions button {
+.profile-actions button,
+.profile-actions a {
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
   min-height: 42px;
   padding: 8px 14px;
   border: 1px solid #b8cee1;
@@ -235,24 +239,42 @@ body {
   font-size: 15px;
   font-weight: 700;
   line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
   transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.profile-actions button + button {
+.profile-actions .primary-action {
+  position: relative;
+  min-width: 172px;
+  background: #245f8f;
+  box-shadow: 0 10px 20px rgba(36, 95, 143, 0.18);
+}
+
+.profile-actions .primary-action::after {
+  margin-left: 8px;
+  content: "→";
+}
+
+.profile-actions button + button,
+.profile-actions a {
   background: #fff;
   color: var(--blue);
 }
 
 .profile-actions button:hover,
-.profile-actions button:focus-visible {
+.profile-actions button:focus-visible,
+.profile-actions a:hover,
+.profile-actions a:focus-visible {
   box-shadow: 0 8px 16px rgba(27, 36, 48, 0.12);
   outline: 3px solid rgba(36, 95, 143, 0.2);
   outline-offset: 2px;
   transform: translateY(-1px);
 }
 
-.profile-actions button:active {
+.profile-actions button:active,
+.profile-actions a:active {
   transform: translateY(0);
 }
 
@@ -815,6 +837,34 @@ p {
 .portfolio-intro {
   margin: -4px 0 14px;
   color: #445466;
+}
+
+.portfolio-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 0 14px;
+}
+
+.portfolio-summary div {
+  display: grid;
+  gap: 2px;
+  padding: 12px 14px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f7fbff;
+}
+
+.portfolio-summary strong {
+  color: var(--blue);
+  font-size: 13px;
+}
+
+.portfolio-summary span {
+  color: #263545;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .portfolio-card {
@@ -1678,7 +1728,8 @@ footer {
     display: grid;
   }
 
-  .profile-actions button {
+  .profile-actions button,
+  .profile-actions a {
     width: 100%;
   }
 
@@ -1688,6 +1739,7 @@ footer {
   .future-grid,
   .goal-grid,
   .skill-grid,
+  .portfolio-summary,
   .portfolio-detail-grid,
   .portfolio-card,
   .public-info,
