@@ -217,6 +217,45 @@ body {
   color: #344254;
 }
 
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 0;
+}
+
+.profile-actions button {
+  min-height: 42px;
+  padding: 8px 14px;
+  border: 1px solid #b8cee1;
+  border-radius: 8px;
+  background: #17476d;
+  color: #fff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.profile-actions button + button {
+  background: #fff;
+  color: var(--blue);
+}
+
+.profile-actions button:hover,
+.profile-actions button:focus-visible {
+  box-shadow: 0 8px 16px rgba(27, 36, 48, 0.12);
+  outline: 3px solid rgba(36, 95, 143, 0.2);
+  outline-offset: 2px;
+  transform: translateY(-1px);
+}
+
+.profile-actions button:active {
+  transform: translateY(0);
+}
+
 .profile-points {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -676,12 +715,34 @@ p {
   border: 1px solid #cfe0d8;
   border-radius: 8px;
   background: #f8fbf9;
+  scroll-margin-top: 92px;
 }
 
 .goal-block > p {
   max-width: 48em;
   margin: 0 0 14px;
   color: #334155;
+}
+
+.experience-bridge {
+  display: grid;
+  gap: 4px;
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  border: 1px solid #bdd8cc;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.experience-bridge strong {
+  color: var(--green);
+  font-size: 17px;
+}
+
+.experience-bridge span {
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .goal-grid {
@@ -784,6 +845,15 @@ p {
 .portfolio-list {
   display: grid;
   gap: 14px;
+}
+
+.portfolio-block {
+  scroll-margin-top: 92px;
+}
+
+.portfolio-intro {
+  margin: -4px 0 14px;
+  color: #445466;
 }
 
 .portfolio-card {
@@ -1083,6 +1153,32 @@ p {
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #f7fbff;
+}
+
+.closing-message {
+  display: grid;
+  gap: 5px;
+  margin: 30px 0 0;
+  padding: 20px 18px;
+  border: 1px solid #cfe0d8;
+  border-radius: 8px;
+  background: #f8fbf9;
+  text-align: center;
+}
+
+.closing-message span {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.closing-message p {
+  max-width: 42em;
+  margin: 0 auto;
+  color: #173f33;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.7;
 }
 
 .contact-block h2 {
@@ -1617,6 +1713,14 @@ footer {
     padding: 12px 14px;
   }
 
+  .profile-actions {
+    display: grid;
+  }
+
+  .profile-actions button {
+    width: 100%;
+  }
+
   .profile-points,
   .publish-check,
   .strength-grid,
@@ -1774,6 +1878,14 @@ footer {
 
   .message-block p {
     font-size: 20px;
+  }
+
+  .closing-message {
+    padding: 16px 14px;
+  }
+
+  .closing-message p {
+    font-size: 17px;
   }
 
   .readable-text {

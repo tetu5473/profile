@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://tetu5473.github.io/profile/">
   <meta property="og:image" content="https://tetu5473.github.io/profile/otaru-canal-real.jpg">
   <title>太田鉄也 プロフィール</title>
-  <link rel="stylesheet" href="style.css?v=20260722-9">
+  <link rel="stylesheet" href="style.css?v=20260722-10">
 </head>
 <body>
   <main class="page">
@@ -44,20 +44,27 @@
       <div class="profile-main">
         <h2>太田 鉄也</h2>
         <p class="catchcopy">
-          介護の現場で23年、人と向き合ってきた経験を活かし、Web制作とプログラミングを学習中。
+          介護経験23年。使う人の気持ちを考えたWeb制作を学んでいます。
         </p>
-        <p class="lead">北海道小樽市出身です。大原簿記専門学校 札幌校を卒業し、現在はWeb制作やプログラミングを学んでいます。</p>
+        <p class="lead">
+          北海道小樽市出身です。大原簿記専門学校 札幌校を卒業し、現在はWeb制作やプログラミングを学んでいます。
+          介護の現場で培った気配りを、見やすく迷わない画面作りに活かしていきたいです。
+        </p>
+        <div class="profile-actions" aria-label="プロフィール内の主な導線">
+          <button type="button" data-open-tab="learning-tab" data-scroll-target="portfolio-section">制作物を見る</button>
+          <button type="button" data-open-tab="learning-tab" data-scroll-target="care-web-section">介護経験の活かし方</button>
+        </div>
         <ul class="profile-points">
           <li>介護経験 約23年</li>
           <li>介護支援専門員 約10年</li>
-          <li>Web制作を学習中</li>
+          <li>使いやすい画面作りを学習中</li>
         </ul>
       </div>
     </section>
 
     <section class="share-note" aria-label="このページで伝えたいこと">
-      <strong>このページで見ていただきたいこと</strong>
-      <span>介護の現場で人と向き合ってきた経験と、Web制作・プログラミングへ挑戦している現在の歩みをまとめています。</span>
+      <strong>このページで伝えたいこと</strong>
+      <span>人と向き合ってきた経験を土台に、使う人にやさしいWeb制作へ挑戦していることをまとめています。</span>
     </section>
 
     <section class="publish-check" aria-label="公開ページの確認状況">
@@ -375,13 +382,17 @@
           </p>
         </section>
 
-        <section class="content-block goal-block">
+        <section class="content-block goal-block" id="care-web-section">
           <h2>介護経験を活かして挑戦したいこと</h2>
           <p>
             介護の現場では、記録、情報共有、予定調整、家族や関係機関との連絡など、
             利用者さんと向き合う時間以外にも多くの業務があります。
             そうした現場の負担を少しでも減らし、働く人が利用者さんに向き合う時間を増やせるような仕組みに関心があります。
           </p>
+          <div class="experience-bridge" aria-label="介護経験とWeb制作のつながり">
+            <strong>介護経験をWeb制作に活かす視点</strong>
+            <span>相手の状況を想像する力、わかりやすく伝える力、迷わない導線を考える力を、画面作りにも活かしたいです。</span>
+          </div>
           <div class="goal-grid">
             <article>
               <h3>介護記録をわかりやすくする</h3>
@@ -403,12 +414,15 @@
           <p>自分に正直に、素直に学び、諦めずに人生を変えていく。</p>
         </section>
 
-        <section class="content-block portfolio-block">
+        <section class="content-block portfolio-block" id="portfolio-section">
           <h2>制作物・ポートフォリオ</h2>
+          <p class="portfolio-intro">
+            作ったもの、できるようになったこと、次に作るものが伝わるように整理しています。
+          </p>
           <div class="portfolio-list">
             <div class="portfolio-card">
               <div>
-                <span class="portfolio-label">Portfolio 01</span>
+                <span class="portfolio-label">作ったもの</span>
                 <h3>プロフィールホームページ</h3>
                 <p>
                   自分の経歴、強み、趣味、学習目標を1ページにまとめた自己紹介サイトです。
@@ -424,7 +438,7 @@
 
             <div class="portfolio-card">
               <div>
-                <span class="portfolio-label">Portfolio 02</span>
+                <span class="portfolio-label">できるようになったこと</span>
                 <h3>GitHub Pagesでの公開</h3>
                 <p>
                   作成したプロフィールサイトをGitHubに管理し、GitHub Pagesで公開しました。
@@ -440,7 +454,7 @@
 
             <div class="portfolio-card portfolio-card-app">
               <div>
-                <span class="portfolio-label">Portfolio 03</span>
+                <span class="portfolio-label">作っているもの</span>
                 <h3>太田の習慣コーチアプリ</h3>
                 <figure class="portfolio-preview portfolio-preview-showcase">
                   <div class="app-showcase">
@@ -494,7 +508,7 @@
 
             <div class="portfolio-card portfolio-card-next">
               <div>
-                <span class="portfolio-label">Next Step</span>
+                <span class="portfolio-label">次に作るもの</span>
                 <h3>次に追加する予定</h3>
                 <p>
                   今後は、アプリの公開URLを追加し、実際にどのように使えるかまで伝わる形にしていきます。
@@ -599,6 +613,11 @@
       </div>
     </div>
 
+    <section class="closing-message" aria-label="これから目指すこと">
+      <span>Next Vision</span>
+      <p>介護経験を活かして、使う人にやさしいWebサービスを作れる人を目指しています。</p>
+    </section>
+
     <section class="content-block contact-block">
       <h2>公開について</h2>
       <div class="public-info">
@@ -642,6 +661,7 @@
     const storyCarousel = document.querySelector(".story-carousel");
     const copyLinkButton = document.querySelector(".copy-link-button");
     const copyStatus = document.querySelector(".copy-status");
+    const profileActionButtons = document.querySelectorAll(".profile-actions button");
     const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     let currentStoryIndex = 0;
     let storyAutoTimer;
@@ -664,33 +684,58 @@
       }
     };
 
-    tabButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const targetId = button.dataset.tab;
-        const description = tabDescriptions[targetId];
+    function activateTab(targetId, shouldScrollStatus = true) {
+      const activeButton = document.querySelector(`[data-tab="${targetId}"]`);
+      const targetPanel = document.getElementById(targetId);
+      const description = tabDescriptions[targetId];
 
-        tabButtons.forEach((item) => {
-          item.classList.remove("is-active");
-          item.setAttribute("aria-selected", "false");
-          item.setAttribute("tabindex", "-1");
-        });
-        tabPanels.forEach((panel) => {
-          panel.classList.remove("is-active");
-          panel.hidden = true;
-        });
+      if (!activeButton || !targetPanel || !description) {
+        return;
+      }
 
-        button.classList.add("is-active");
-        button.setAttribute("aria-selected", "true");
-        button.removeAttribute("tabindex");
-        const targetPanel = document.getElementById(targetId);
-        targetPanel.classList.add("is-active");
-        targetPanel.hidden = false;
+      tabButtons.forEach((item) => {
+        item.classList.remove("is-active");
+        item.setAttribute("aria-selected", "false");
+        item.setAttribute("tabindex", "-1");
+      });
+      tabPanels.forEach((panel) => {
+        panel.classList.remove("is-active");
+        panel.hidden = true;
+      });
 
-        tabStatus.innerHTML = `<strong>${description.title}</strong><span>${description.text}</span>`;
+      activeButton.classList.add("is-active");
+      activeButton.setAttribute("aria-selected", "true");
+      activeButton.removeAttribute("tabindex");
+      targetPanel.classList.add("is-active");
+      targetPanel.hidden = false;
+
+      tabStatus.innerHTML = `<strong>${description.title}</strong><span>${description.text}</span>`;
+
+      if (shouldScrollStatus) {
         tabStatus.scrollIntoView({
           behavior: "smooth",
           block: "start"
         });
+      }
+    }
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activateTab(button.dataset.tab);
+      });
+    });
+
+    profileActionButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activateTab(button.dataset.openTab, false);
+
+        const target = document.getElementById(button.dataset.scrollTarget);
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
       });
     });
 
