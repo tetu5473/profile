@@ -68,6 +68,7 @@ body {
   overflow: hidden;
   background: #132c43;
   border-bottom: 1px solid var(--line);
+  animation: heroStageReveal 1s ease-out both;
 }
 
 .otaru-hero img {
@@ -89,6 +90,7 @@ body {
     linear-gradient(90deg, rgba(19, 44, 67, 0.78) 0%, rgba(19, 44, 67, 0.42) 45%, rgba(19, 44, 67, 0.1) 100%),
     linear-gradient(180deg, rgba(19, 44, 67, 0.04) 0%, rgba(19, 44, 67, 0.34) 100%);
   content: "";
+  animation: heroOverlayReveal 1.15s ease-out both;
 }
 
 .otaru-hero::before {
@@ -106,6 +108,18 @@ body {
   pointer-events: none;
   transform: translate3d(-8%, 0, 0);
   animation: waterShimmer 18s linear infinite alternate;
+  will-change: transform, opacity;
+}
+
+.otaru-hero-sweep {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(106deg, transparent 0%, rgba(255, 255, 255, 0.22) 44%, transparent 62%);
+  pointer-events: none;
+  transform: translate3d(-120%, 0, 0);
+  animation: heroSweep 1.65s ease-out 0.35s both;
   will-change: transform, opacity;
 }
 
@@ -467,6 +481,10 @@ p {
   animation-name: storyImageDriftUp;
 }
 
+.story-slide.is-active.is-entering img {
+  animation: storyImageEnter 0.98s ease-out both;
+}
+
 .story-slide.is-active::after {
   position: absolute;
   top: 0;
@@ -487,12 +505,23 @@ p {
   display: grid;
   gap: 3px;
   min-height: 78px;
+  margin: -18px 28px 16px;
   padding: 13px 72px 15px;
+  border: 1px solid rgba(216, 222, 230, 0.94);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 22px rgba(27, 36, 48, 0.1);
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 .story-slide.is-active figcaption {
   animation: captionReveal 0.75s ease-out 0.12s both;
+}
+
+.story-slide.is-active.is-entering figcaption {
+  animation: captionImpact 0.82s ease-out 0.12s both;
 }
 
 .story-slide strong {
@@ -1302,6 +1331,44 @@ footer {
   }
 }
 
+@keyframes heroStageReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes heroOverlayReveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heroSweep {
+  0% {
+    opacity: 0;
+    transform: translate3d(-120%, 0, 0);
+  }
+
+  28% {
+    opacity: 0.52;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(120%, 0, 0);
+  }
+}
+
 @keyframes storyImageDrift {
   from {
     transform: scale(1.015) translate3d(-0.38%, -0.12%, 0);
@@ -1329,6 +1396,18 @@ footer {
 
   to {
     transform: scale(1.052) translate3d(0.22%, -0.38%, 0);
+  }
+}
+
+@keyframes storyImageEnter {
+  from {
+    filter: saturate(1.12) contrast(1.08);
+    transform: scale(1.085) translate3d(0, 0, 0);
+  }
+
+  to {
+    filter: saturate(1.07) contrast(1.03);
+    transform: scale(1.015) translate3d(0, 0, 0);
   }
 }
 
@@ -1369,6 +1448,18 @@ footer {
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes captionImpact {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
@@ -1421,8 +1512,11 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .otaru-hero,
   .otaru-hero img,
   .otaru-hero::before,
+  .otaru-hero::after,
+  .otaru-hero-sweep,
   .otaru-hero-text span,
   .otaru-hero-text h2,
   .otaru-hero-text p,
@@ -1430,6 +1524,8 @@ footer {
   .story-slide.is-active figcaption,
   .story-slide.is-active,
   .story-slide.is-active img,
+  .story-slide.is-active.is-entering img,
+  .story-slide.is-active.is-entering figcaption,
   .story-dot.is-active,
   .app-flow::after {
     animation: none;
@@ -1603,6 +1699,7 @@ footer {
 
   .story-slide figcaption {
     min-height: 92px;
+    margin: -14px 14px 16px;
     padding: 12px 52px 18px;
   }
 

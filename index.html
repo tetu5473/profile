@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://tetu5473.github.io/profile/">
   <meta property="og:image" content="https://tetu5473.github.io/profile/otaru-canal-real.jpg">
   <title>太田鉄也 プロフィール</title>
-  <link rel="stylesheet" href="style.css?v=20260722-8">
+  <link rel="stylesheet" href="style.css?v=20260722-9">
 </head>
 <body>
   <main class="page">
@@ -28,6 +28,7 @@
 
     <section class="otaru-hero" aria-label="北海道小樽市のイメージ">
       <img src="otaru-canal-real.jpg" alt="北海道小樽市の小樽運河の風景写真">
+      <div class="otaru-hero-sweep" aria-hidden="true"></div>
       <div class="otaru-hero-text">
         <span>My Roots</span>
         <h2>北海道小樽市から、新しい挑戦へ。</h2>
@@ -700,6 +701,16 @@
         const isActive = slideIndex === currentStoryIndex;
         slide.classList.toggle("is-active", isActive);
         slide.setAttribute("aria-hidden", String(!isActive));
+        slide.classList.remove("is-entering");
+
+        if (isActive && !reduceMotionQuery.matches) {
+          window.requestAnimationFrame(() => {
+            slide.classList.add("is-entering");
+            window.setTimeout(() => {
+              slide.classList.remove("is-entering");
+            }, 980);
+          });
+        }
       });
 
       storyDots.forEach((dot, dotIndex) => {
