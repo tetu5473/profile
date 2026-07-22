@@ -125,6 +125,7 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 15px;
   font-weight: 700;
+  animation: heroTextReveal 0.8s ease-out 0.08s both;
 }
 
 .otaru-hero-text h2 {
@@ -132,6 +133,7 @@ body {
   font-size: 30px;
   line-height: 1.35;
   letter-spacing: 0;
+  animation: heroTextReveal 0.9s ease-out 0.18s both;
 }
 
 .otaru-hero-text p {
@@ -140,6 +142,7 @@ body {
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   line-height: 1.7;
+  animation: heroTextReveal 0.95s ease-out 0.28s both;
 }
 
 .profile {
@@ -437,6 +440,7 @@ p {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
+  z-index: 1;
 }
 
 .story-slide img {
@@ -487,6 +491,10 @@ p {
   text-align: center;
 }
 
+.story-slide.is-active figcaption {
+  animation: captionReveal 0.75s ease-out 0.12s both;
+}
+
 .story-slide strong {
   color: var(--blue);
   font-size: 18px;
@@ -513,6 +521,7 @@ p {
   line-height: 1;
   cursor: pointer;
   transform: translateY(-50%);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .story-arrow:hover,
@@ -520,6 +529,12 @@ p {
   background: #fff;
   outline: 3px solid rgba(36, 95, 143, 0.22);
   outline-offset: 2px;
+  box-shadow: 0 8px 18px rgba(27, 36, 48, 0.16);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.story-arrow:active {
+  transform: translateY(-50%) scale(0.96);
 }
 
 .story-arrow-prev {
@@ -548,10 +563,18 @@ p {
   border-radius: 50%;
   background: #fff;
   cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .story-dot.is-active {
   background: #245f8f;
+  box-shadow: 0 0 0 5px rgba(36, 95, 143, 0.14);
+  animation: dotPulse 3.2s ease-in-out infinite;
+}
+
+.story-dot:hover,
+.story-dot:focus-visible {
+  transform: scale(1.25);
 }
 
 .strength-grid {
@@ -1325,6 +1348,41 @@ footer {
   }
 }
 
+@keyframes heroTextReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes captionReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dotPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 4px rgba(36, 95, 143, 0.12);
+  }
+
+  50% {
+    box-shadow: 0 0 0 7px rgba(36, 95, 143, 0.2);
+  }
+}
+
 @keyframes heroDriftMobile {
   from {
     transform: scale(1.012) translate3d(-0.25%, -0.08%, 0);
@@ -1365,9 +1423,14 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .otaru-hero img,
   .otaru-hero::before,
+  .otaru-hero-text span,
+  .otaru-hero-text h2,
+  .otaru-hero-text p,
   .story-slide.is-active::after,
+  .story-slide.is-active figcaption,
   .story-slide.is-active,
   .story-slide.is-active img,
+  .story-dot.is-active,
   .app-flow::after {
     animation: none;
   }
