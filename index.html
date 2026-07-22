@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://tetu5473.github.io/profile/">
   <meta property="og:image" content="https://tetu5473.github.io/profile/otaru-canal-real.jpg">
   <title>太田鉄也 プロフィール</title>
-  <link rel="stylesheet" href="style.css?v=20260722-5">
+  <link rel="stylesheet" href="style.css?v=20260722-6">
 </head>
 <body>
   <main class="page">
@@ -697,7 +697,9 @@
       currentStoryIndex = (index + storySlides.length) % storySlides.length;
 
       storySlides.forEach((slide, slideIndex) => {
-        slide.classList.toggle("is-active", slideIndex === currentStoryIndex);
+        const isActive = slideIndex === currentStoryIndex;
+        slide.classList.toggle("is-active", isActive);
+        slide.setAttribute("aria-hidden", String(!isActive));
       });
 
       storyDots.forEach((dot, dotIndex) => {
@@ -748,6 +750,7 @@
     });
     storyCarousel.addEventListener("focusout", startStoryAutoPlay);
     reduceMotionQuery.addEventListener("change", restartStoryAutoPlay);
+    showStorySlide(currentStoryIndex);
     startStoryAutoPlay();
 
     window.addEventListener("scroll", () => {
