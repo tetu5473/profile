@@ -58,7 +58,7 @@ body {
 .site-header p {
   margin: 2px 0 0;
   color: rgba(255, 255, 255, 0.82);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .otaru-hero {
@@ -137,7 +137,7 @@ body {
   margin-bottom: 6px;
   color: rgba(255, 255, 255, 0.76);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   animation: heroTextReveal 0.8s ease-out 0.08s both;
 }
@@ -190,7 +190,7 @@ body {
 .photo-note {
   margin: 8px 0 0;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .profile-main h2 {
@@ -248,7 +248,7 @@ body {
   background: #17476d;
   color: #fff;
   font: inherit;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -306,7 +306,7 @@ body {
   background: #f4f9fd;
   color: var(--blue);
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -378,12 +378,12 @@ body {
 
 .profile-summary strong {
   color: var(--green);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .profile-summary span {
   color: #263545;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
 }
 
@@ -391,7 +391,7 @@ body {
   display: inline-block;
   margin-bottom: 4px;
   color: var(--green);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -592,7 +592,7 @@ p {
 
 .story-slide span {
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .story-arrow {
@@ -763,7 +763,7 @@ p {
 
 .experience-bridge span {
   color: #334155;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -813,7 +813,7 @@ p {
 
 .reference-note {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .skill-grid {
@@ -896,12 +896,12 @@ p {
 
 .portfolio-summary strong {
   color: var(--blue);
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .portfolio-summary span {
   color: #263545;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -939,7 +939,7 @@ p {
   display: inline-block;
   margin-bottom: 6px;
   color: var(--rose);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -972,12 +972,12 @@ p {
 
 .portfolio-detail-grid strong {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .portfolio-detail-grid span {
   color: #334155;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -1095,7 +1095,7 @@ p {
   border-radius: 999px;
   background: #f7fbff;
   color: var(--blue);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -1131,7 +1131,7 @@ p {
 
 .closing-message span {
   color: var(--green);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -1202,12 +1202,12 @@ p {
 
 .contact-list strong {
   color: var(--blue);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .contact-list span {
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .share-actions {
@@ -1230,7 +1230,7 @@ p {
   background: #fff;
   color: var(--blue);
   font: inherit;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.4;
   text-decoration: none;
@@ -1249,7 +1249,7 @@ p {
 
 .copy-status {
   color: var(--green);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -1271,7 +1271,7 @@ p {
 
 .qr-card a {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -1295,7 +1295,7 @@ p {
   margin-bottom: 5px;
   color: rgba(255, 255, 255, 0.78);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -1350,7 +1350,7 @@ footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .back-to-top {
@@ -1366,7 +1366,7 @@ footer {
   background: #245f8f;
   color: #fff;
   font: inherit;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   opacity: 0;
@@ -1619,7 +1619,7 @@ footer {
   }
 
   .site-header p {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .otaru-hero {
@@ -1656,7 +1656,7 @@ footer {
   }
 
   .otaru-hero-text p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .profile {
@@ -1713,8 +1713,8 @@ footer {
 
   .tab-button {
     min-height: 46px;
-    padding: 8px 5px;
-    font-size: 14px;
+    padding: 8px 6px;
+    font-size: 16px;
     line-height: 1.35;
   }
 
@@ -1728,7 +1728,7 @@ footer {
   }
 
   .tab-status span {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .share-note {
@@ -1741,7 +1741,7 @@ footer {
   }
 
   .share-note span {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .content-block {
@@ -1775,7 +1775,7 @@ footer {
   }
 
   .story-slide span {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .story-arrow {
@@ -1819,7 +1819,7 @@ footer {
   .future-grid p,
   .goal-grid p,
   .skill-grid p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .timeline li {
@@ -1894,7 +1894,7 @@ footer {
     min-width: 58px;
     height: 40px;
     padding: 0 10px;
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -1906,7 +1906,7 @@ footer {
 
   .tab-button {
     min-height: 44px;
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .profile-photo {
