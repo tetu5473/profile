@@ -1105,6 +1105,17 @@ p {
   font-weight: 700;
 }
 
+.interest-summary {
+  margin: 18px 0 0;
+  padding: 18px 20px;
+  border: 1px solid #cfe0d8;
+  border-radius: 8px;
+  background: #f8fbf9;
+  color: #173f33;
+  font-weight: 700;
+  line-height: 1.85;
+}
+
 .vision-block {
   padding: 22px;
   border: 1px solid #ead4b2;
@@ -1358,6 +1369,15 @@ footer {
   color: var(--muted);
   text-align: center;
   font-size: 16px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+.thanks-message {
+  color: #17476d;
+  font-weight: 700;
 }
 
 .back-to-top {
