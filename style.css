@@ -23,14 +23,14 @@ body {
   background: #eef1f4;
   color: var(--ink);
   font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
-  font-size: 17px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.9;
 }
 
 .page {
   max-width: 1040px;
   margin: 24px auto;
-  padding: 0 22px 34px;
+  padding: 0 24px 40px;
   background: var(--paper);
   border: 1px solid rgba(216, 222, 230, 0.9);
   border-radius: 8px;
@@ -39,8 +39,8 @@ body {
 }
 
 .site-header {
-  margin: 0 -22px;
-  padding: 22px 22px 18px;
+  margin: 0 -24px;
+  padding: 24px 24px 20px;
   color: #fff;
   text-align: center;
   background: #17476d;
@@ -64,7 +64,7 @@ body {
 .otaru-hero {
   position: relative;
   min-height: 270px;
-  margin: 0 -22px;
+  margin: 0 -24px;
   overflow: hidden;
   background: #132c43;
   border-bottom: 1px solid var(--line);
@@ -154,8 +154,8 @@ body {
   max-width: 34em;
   margin: 0;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 18px;
+  line-height: 1.8;
   animation: heroTextReveal 0.95s ease-out 0.28s both;
 }
 
@@ -164,8 +164,8 @@ body {
   grid-template-columns: 260px 1fr;
   gap: 28px;
   align-items: start;
-  margin: 0 -22px;
-  padding: 30px 28px 28px;
+  margin: 0 -24px;
+  padding: 34px 30px 32px;
   background: #f7f9fb;
   border-bottom: 1px solid var(--line);
 }
@@ -204,7 +204,7 @@ body {
 
 .one-line-profile {
   margin: 0 0 12px;
-  padding: 10px 12px;
+  padding: 12px 14px;
   border: 1px solid #bdd8cc;
   border-radius: 8px;
   background: #f8fbf9;
@@ -216,7 +216,7 @@ body {
 
 .catchcopy {
   margin: 0 0 14px;
-  padding: 14px 16px;
+  padding: 16px 18px;
   background: var(--amber-soft);
   border: 1px solid #efd8a8;
   border-radius: 8px;
@@ -225,15 +225,15 @@ body {
 }
 
 .lead {
-  margin: 0 0 16px;
+  margin: 0 0 18px;
   color: #344254;
 }
 
 .profile-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 14px 0 0;
+  gap: 14px;
+  margin: 18px 0 0;
 }
 
 .profile-actions button,
@@ -241,8 +241,8 @@ body {
   display: inline-grid;
   align-items: center;
   justify-content: center;
-  min-height: 42px;
-  padding: 8px 14px;
+  min-height: 50px;
+  padding: 10px 18px;
   border: 1px solid #b8cee1;
   border-radius: 8px;
   background: #17476d;
@@ -293,14 +293,14 @@ body {
 .profile-points {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 14px 0 0;
+  gap: 12px;
+  margin: 18px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .profile-points li {
-  padding: 9px 8px;
+  padding: 12px 10px;
   border: 1px solid #bfd0df;
   border-radius: 8px;
   background: #f4f9fd;
@@ -316,9 +316,9 @@ body {
   z-index: 30;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin: 0 -22px;
-  padding: 10px;
+  gap: 12px;
+  margin: 0 -24px;
+  padding: 12px;
   border: 1px solid var(--line);
   border-right: 0;
   border-left: 0;
@@ -329,8 +329,8 @@ body {
 }
 
 .tab-button {
-  min-height: 50px;
-  padding: 10px 12px;
+  min-height: 58px;
+  padding: 12px 14px;
   border: 1px solid transparent;
   border-radius: 8px;
   background: transparent;
@@ -342,9 +342,9 @@ body {
 
 .share-note {
   display: grid;
-  gap: 3px;
-  margin: 18px 0 0;
-  padding: 14px 16px;
+  gap: 6px;
+  margin: 22px 0 0;
+  padding: 18px 20px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #f8fafc;
@@ -363,14 +363,14 @@ body {
 .profile-summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin: 14px 0 0;
+  gap: 14px;
+  margin: 18px 0 0;
 }
 
 .profile-summary div {
   display: grid;
-  gap: 4px;
-  padding: 14px 16px;
+  gap: 6px;
+  padding: 18px 20px;
   border: 1px solid #cfe0d8;
   border-radius: 8px;
   background: #f8fbf9;
@@ -384,7 +384,7 @@ body {
 .profile-summary span {
   color: #263545;
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.75;
 }
 
 .section-kicker {
@@ -414,9 +414,9 @@ body {
 
 .tab-status {
   display: grid;
-  gap: 2px;
-  margin: 10px 0 0;
-  padding: 13px 16px;
+  gap: 5px;
+  margin: 14px 0 0;
+  padding: 16px 18px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #f4f9fd;
@@ -435,7 +435,7 @@ body {
 }
 
 .tab-panels {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .tab-panel {
@@ -447,7 +447,7 @@ body {
 }
 
 .content-block {
-  margin: 26px 0 0;
+  margin: 32px 0 0;
 }
 
 .content-block h2 {
@@ -459,11 +459,11 @@ body {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 14px;
 }
 
 .readable-text {
-  padding: 18px 20px 10px;
+  padding: 22px 24px 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -477,7 +477,7 @@ p {
 }
 
 .key-message {
-  padding: 12px 14px;
+  padding: 16px 18px;
   border: 1px solid #efd8a8;
   border-radius: 8px;
   background: var(--amber-soft);
@@ -564,10 +564,10 @@ p {
 
 .story-slide figcaption {
   display: grid;
-  gap: 3px;
-  min-height: 78px;
-  margin: -18px 28px 16px;
-  padding: 13px 72px 15px;
+  gap: 6px;
+  min-height: 92px;
+  margin: -20px 30px 18px;
+  padding: 18px 78px 20px;
   border: 1px solid rgba(216, 222, 230, 0.94);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.94);
@@ -587,7 +587,7 @@ p {
 
 .story-slide strong {
   color: var(--blue);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .story-slide span {
@@ -670,7 +670,7 @@ p {
 .strength-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 
 .strength-card,
@@ -686,14 +686,14 @@ p {
 
 .strength-card {
   min-height: 142px;
-  padding: 16px;
+  padding: 20px;
 }
 
 .strength-card h3,
 .interest-card h3,
 .future-grid h3 {
   margin: 0 0 10px;
-  padding-bottom: 7px;
+  padding-bottom: 9px;
   border-bottom: 1px solid var(--line);
   color: var(--blue);
   font-size: 18px;
@@ -705,17 +705,18 @@ p {
   margin: 0;
   color: #334155;
   font-size: 16px;
+  line-height: 1.8;
 }
 
 .interest-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 
 .interest-card {
   min-height: 188px;
-  padding: 16px;
+  padding: 20px;
 }
 
 .interest-card:nth-child(2n) h3 {
@@ -729,11 +730,11 @@ p {
 .future-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 
 .goal-block {
-  padding: 18px;
+  padding: 22px;
   border: 1px solid #cfe0d8;
   border-radius: 8px;
   background: #f8fbf9;
@@ -742,15 +743,15 @@ p {
 
 .goal-block > p {
   max-width: 48em;
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   color: #334155;
 }
 
 .experience-bridge {
   display: grid;
-  gap: 4px;
-  margin: 0 0 14px;
-  padding: 14px 16px;
+  gap: 6px;
+  margin: 0 0 18px;
+  padding: 18px 20px;
   border: 1px solid #bdd8cc;
   border-radius: 8px;
   background: #fff;
@@ -770,11 +771,11 @@ p {
 .goal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 
 .skill-block {
-  padding: 18px;
+  padding: 22px;
   border: 1px solid #d7e0eb;
   border-radius: 8px;
   background: #f8fafc;
@@ -782,12 +783,12 @@ p {
 
 .skill-block > p {
   max-width: 48em;
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   color: #334155;
 }
 
 .reference-block {
-  padding: 18px;
+  padding: 22px;
   border: 1px solid #d7e0eb;
   border-radius: 8px;
   background: #fff;
@@ -795,13 +796,14 @@ p {
 
 .reference-block p {
   max-width: 48em;
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   color: #334155;
 }
 
 .reference-link {
   display: inline-block;
-  margin: 2px 0 10px;
+  margin: 4px 0 12px;
+  padding: 8px 0;
   color: var(--blue);
   font-weight: 700;
   text-decoration: none;
@@ -819,22 +821,22 @@ p {
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 
 .future-grid article {
   min-height: 150px;
-  padding: 16px;
+  padding: 20px;
 }
 
 .goal-grid article {
   min-height: 168px;
-  padding: 16px;
+  padding: 20px;
 }
 
 .skill-grid article {
   min-height: 184px;
-  padding: 16px;
+  padding: 20px;
 }
 
 .future-grid h3 {
@@ -844,7 +846,7 @@ p {
 .goal-grid h3,
 .skill-grid h3 {
   margin: 0 0 10px;
-  padding-bottom: 7px;
+  padding-bottom: 9px;
   border-bottom: 1px solid var(--line);
   font-size: 18px;
 }
@@ -862,11 +864,12 @@ p {
   margin: 0;
   color: #334155;
   font-size: 16px;
+  line-height: 1.8;
 }
 
 .portfolio-list {
   display: grid;
-  gap: 14px;
+  gap: 18px;
 }
 
 .portfolio-block {
@@ -874,21 +877,21 @@ p {
 }
 
 .portfolio-intro {
-  margin: -4px 0 14px;
+  margin: -4px 0 18px;
   color: #445466;
 }
 
 .portfolio-summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 0 0 14px;
+  gap: 14px;
+  margin: 0 0 18px;
 }
 
 .portfolio-summary div {
   display: grid;
-  gap: 2px;
-  padding: 12px 14px;
+  gap: 5px;
+  padding: 16px 18px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #f7fbff;
@@ -909,8 +912,8 @@ p {
 .portfolio-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
-  gap: 18px;
-  padding: 18px;
+  gap: 22px;
+  padding: 22px;
   border: 1px solid #ead4dc;
   border-radius: 8px;
   background: #fff;
@@ -944,7 +947,7 @@ p {
 }
 
 .portfolio-card h3 {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: #15344e;
   font-size: 21px;
 }
@@ -952,19 +955,20 @@ p {
 .portfolio-card p {
   margin: 0;
   color: #334155;
+  line-height: 1.85;
 }
 
 .portfolio-detail-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 14px;
+  gap: 12px;
+  margin-top: 18px;
 }
 
 .portfolio-detail-grid div {
   display: grid;
-  gap: 4px;
-  padding: 12px;
+  gap: 6px;
+  padding: 16px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #fff;
@@ -983,7 +987,7 @@ p {
 
 .portfolio-points {
   margin: 0;
-  padding: 14px 16px 14px 32px;
+  padding: 18px 18px 18px 34px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -991,8 +995,8 @@ p {
 }
 
 .future-note {
-  margin-top: 14px;
-  padding: 14px 16px;
+  margin-top: 18px;
+  padding: 18px 20px;
   border: 1px solid #efd8a8;
   border-radius: 8px;
   background: var(--amber-soft);
@@ -1011,8 +1015,8 @@ p {
 .timeline li {
   display: grid;
   grid-template-columns: 230px 1fr;
-  gap: 14px;
-  padding: 14px 16px;
+  gap: 18px;
+  padding: 18px 20px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -1027,13 +1031,14 @@ p {
 .timeline span {
   display: block;
   color: #334155;
+  line-height: 1.8;
 }
 
 .history-summary {
   display: grid;
-  gap: 6px;
-  margin-top: 14px;
-  padding: 16px 18px;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 20px 22px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #f8fafc;
@@ -1047,11 +1052,12 @@ p {
 .history-summary p {
   margin: 0;
   color: #334155;
+  line-height: 1.85;
 }
 
 .interest-lead {
-  margin: -4px 0 14px;
-  padding: 14px 16px;
+  margin: -4px 0 18px;
+  padding: 18px 20px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #f8fafc;
@@ -1060,7 +1066,7 @@ p {
 
 .interest-card {
   position: relative;
-  padding-top: 18px;
+  padding-top: 20px;
 }
 
 .interest-icon {
@@ -1089,8 +1095,8 @@ p {
 
 .interest-tag {
   display: inline-block;
-  margin: -2px 0 9px;
-  padding: 3px 9px;
+  margin: -2px 0 12px;
+  padding: 5px 12px;
   border: 1px solid #c8d7e5;
   border-radius: 999px;
   background: #f7fbff;
@@ -1100,7 +1106,7 @@ p {
 }
 
 .vision-block {
-  padding: 18px;
+  padding: 22px;
   border: 1px solid #ead4b2;
   border-radius: 8px;
   background: #fffaf0;
@@ -1112,7 +1118,7 @@ p {
 
 .contact-block {
   margin-top: 28px;
-  padding: 16px 18px 18px;
+  padding: 22px 24px 24px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #f7fbff;
@@ -1120,9 +1126,9 @@ p {
 
 .closing-message {
   display: grid;
-  gap: 5px;
+  gap: 8px;
   margin: 30px 0 0;
-  padding: 20px 18px;
+  padding: 24px 20px;
   border: 1px solid #cfe0d8;
   border-radius: 8px;
   background: #f8fbf9;
@@ -1146,9 +1152,9 @@ p {
 
 .profile-closing-note {
   display: grid;
-  gap: 6px;
-  margin: 16px 0 0;
-  padding: 18px;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 22px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #f8fafc;
@@ -1167,25 +1173,26 @@ p {
 }
 
 .contact-block h2 {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .contact-block p {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   color: #334155;
+  line-height: 1.85;
 }
 
 .public-info {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;
-  gap: 18px;
+  gap: 22px;
   align-items: start;
 }
 
 .contact-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1193,8 +1200,8 @@ p {
 
 .contact-list li {
   display: grid;
-  gap: 2px;
-  padding: 12px;
+  gap: 5px;
+  padding: 16px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #fff;
@@ -1213,7 +1220,7 @@ p {
 .share-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
   align-items: center;
   margin-top: 12px;
 }
@@ -1223,8 +1230,8 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 42px;
-  padding: 8px 14px;
+  min-height: 50px;
+  padding: 10px 18px;
   border: 1px solid #b8cee1;
   border-radius: 8px;
   background: #fff;
@@ -1256,8 +1263,8 @@ p {
 .qr-card {
   display: grid;
   justify-items: center;
-  gap: 8px;
-  padding: 12px;
+  gap: 10px;
+  padding: 16px;
   border: 1px solid #c8d7e5;
   border-radius: 8px;
   background: #fff;
@@ -1317,7 +1324,7 @@ table {
 
 th,
 td {
-  padding: 10px 12px;
+  padding: 16px 18px;
   border-bottom: 1px solid var(--line);
   text-align: left;
   vertical-align: top;
@@ -1358,9 +1365,9 @@ footer {
   right: 22px;
   bottom: 22px;
   z-index: 20;
-  min-width: 72px;
-  height: 48px;
-  padding: 0 14px;
+  min-width: 82px;
+  height: 52px;
+  padding: 0 18px;
   border: 0;
   border-radius: 999px;
   background: #245f8f;
@@ -1602,15 +1609,15 @@ footer {
 
   .page {
     margin: 0;
-    padding: 0 14px 28px;
+    padding: 0 16px 32px;
     border: 0;
     border-radius: 0;
     box-shadow: none;
   }
 
   .site-header {
-    margin: 0 -14px;
-    padding: 16px 14px 14px;
+    margin: 0 -16px;
+    padding: 18px 16px 16px;
     border-radius: 0;
   }
 
@@ -1624,7 +1631,7 @@ footer {
 
   .otaru-hero {
     min-height: 220px;
-    margin: 0 -14px;
+    margin: 0 -16px;
   }
 
   .otaru-hero img {
@@ -1661,8 +1668,8 @@ footer {
 
   .profile {
     grid-template-columns: 1fr;
-    margin: 0 -14px;
-    padding: 20px 16px 20px;
+    margin: 0 -16px;
+    padding: 24px 18px 24px;
   }
 
   .profile-photo {
@@ -1676,17 +1683,19 @@ footer {
   }
 
   .catchcopy {
-    font-size: 17px;
-    padding: 12px 14px;
+    font-size: 18px;
+    padding: 14px 16px;
   }
 
   .profile-actions {
     display: grid;
+    gap: 12px;
   }
 
   .profile-actions button,
   .profile-actions a {
     width: 100%;
+    min-height: 54px;
   }
 
   .profile-points,
@@ -1706,25 +1715,25 @@ footer {
 
   .tab-nav {
     grid-template-columns: repeat(2, 1fr);
-    gap: 6px;
-    margin: 0 -14px;
-    padding: 8px;
+    gap: 8px;
+    margin: 0 -16px;
+    padding: 10px;
   }
 
   .tab-button {
-    min-height: 46px;
-    padding: 8px 6px;
+    min-height: 56px;
+    padding: 10px 8px;
     font-size: 16px;
-    line-height: 1.35;
+    line-height: 1.45;
   }
 
   .tab-status {
-    padding: 12px;
+    padding: 16px;
     scroll-margin-top: 132px;
   }
 
   .tab-status strong {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .tab-status span {
@@ -1732,12 +1741,12 @@ footer {
   }
 
   .share-note {
-    margin-top: 14px;
-    padding: 12px;
+    margin-top: 16px;
+    padding: 16px;
   }
 
   .share-note strong {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .share-note span {
@@ -1745,7 +1754,7 @@ footer {
   }
 
   .content-block {
-    margin-top: 24px;
+    margin-top: 28px;
   }
 
   .content-block h2 {
@@ -1753,9 +1762,9 @@ footer {
   }
 
   .story-slide figcaption {
-    min-height: 92px;
-    margin: -14px 14px 16px;
-    padding: 12px 52px 18px;
+    min-height: 112px;
+    margin: -16px 14px 18px;
+    padding: 16px 56px 22px;
   }
 
   .story-slide.is-active::after {
@@ -1802,7 +1811,7 @@ footer {
   .goal-grid article,
   .skill-grid article {
     min-height: 0;
-    padding: 14px;
+    padding: 18px;
   }
 
   .strength-card h3,
@@ -1811,7 +1820,7 @@ footer {
   .goal-grid h3,
   .skill-grid h3 {
     margin-bottom: 8px;
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .strength-card p,
@@ -1824,7 +1833,8 @@ footer {
 
   .timeline li {
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: 8px;
+    padding: 18px;
   }
 
   .message-block p {
@@ -1836,15 +1846,15 @@ footer {
   }
 
   .closing-message p {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .readable-text {
-    padding: 14px 12px 6px;
+    padding: 18px 16px 8px;
   }
 
   .key-message {
-    padding: 11px 12px;
+    padding: 14px 16px;
   }
 
   .qr-card img {
@@ -1859,6 +1869,7 @@ footer {
   .share-actions a,
   .copy-link-button {
     width: 100%;
+    min-height: 54px;
   }
 
   table,
@@ -1880,32 +1891,32 @@ footer {
   }
 
   th {
-    padding-bottom: 4px;
+    padding-bottom: 8px;
     background: #f5f7fa;
   }
 
   td {
-    padding-top: 6px;
+    padding-top: 10px;
   }
 
   .back-to-top {
     right: 10px;
     bottom: 10px;
-    min-width: 58px;
-    height: 40px;
-    padding: 0 10px;
+    min-width: 72px;
+    height: 48px;
+    padding: 0 14px;
     font-size: 16px;
   }
 }
 
 @media (max-width: 420px) {
   .tab-nav {
-    gap: 5px;
-    padding: 7px;
+    gap: 7px;
+    padding: 9px;
   }
 
   .tab-button {
-    min-height: 44px;
+    min-height: 54px;
     font-size: 16px;
   }
 
