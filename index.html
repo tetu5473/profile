@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://tetu5473.github.io/profile/">
   <meta property="og:image" content="https://tetu5473.github.io/profile/otaru-canal-real.jpg">
   <title>太田鉄也 プロフィール</title>
-  <link rel="stylesheet" href="style.css?v=20260725-01">
+  <link rel="stylesheet" href="style.css?v=20260725-02">
 </head>
 <body>
   <main class="page">
@@ -27,12 +27,12 @@
     </nav>
 
     <section class="otaru-hero" aria-label="北海道小樽市のイメージ">
-      <img src="otaru-canal-real.jpg" alt="北海道小樽市の小樽運河の風景写真">
+      <img src="otaru-canal-real.jpg" alt="北海道小樽市の小樽運河の風景写真" fetchpriority="high" decoding="async">
       <div class="otaru-hero-sweep" aria-hidden="true"></div>
       <div class="otaru-hero-text">
         <span>My Roots</span>
-        <h2>北海道小樽市から、新しい挑戦へ。</h2>
-        <p>小樽で育った経験を土台に、介護の現場で学んだ気配りをWeb制作にも活かしていきたいです。</p>
+        <h2>介護経験を、使いやすいWeb制作へ。</h2>
+        <p>小樽で育った経験と、介護の現場で学んだ気配りを、見やすい画面作りに活かしていきたいです。</p>
       </div>
     </section>
 
@@ -44,10 +44,10 @@
       <div class="profile-main">
         <h2>太田 鉄也</h2>
         <p class="one-line-profile">
-          介護経験を活かして、使う人にやさしいWeb制作を学んでいます。
+          介護経験を活かし、使う人にやさしいWeb制作を学んでいます。
         </p>
         <p class="catchcopy">
-          介護経験23年。使う人の気持ちを考えたWeb制作を学んでいます。
+          介護経験23年 × Web制作学習中
         </p>
         <p class="lead">
           北海道小樽市出身です。介護の現場で培った気配りを、
@@ -83,6 +83,18 @@
       <div>
         <strong>挑戦</strong>
         <span>Web制作を学び、見やすく迷わない画面作りに取り組んでいます。</span>
+      </div>
+    </section>
+
+    <section class="viewer-guide" aria-label="初めて見る方への案内">
+      <div>
+        <strong>はじめて見る方へ</strong>
+        <span>まずは「プロフィール」、次に「経歴・歩み」「学習・これから」の順に見ると、これまでの経験と今の挑戦が分かりやすいです。</span>
+      </div>
+      <div class="viewer-guide-actions">
+        <button type="button" data-open-tab="profile-tab">プロフィール</button>
+        <button type="button" data-open-tab="history-tab">経歴・歩み</button>
+        <button type="button" data-open-tab="learning-tab">学習・これから</button>
       </div>
     </section>
 
@@ -136,35 +148,35 @@
           <div class="story-carousel" aria-label="ルーツと挑戦の画像ギャラリー">
             <div class="story-slides">
               <figure class="story-slide is-active">
-                <img src="otaru-canal-real.jpg" alt="小樽運河の実際の風景写真">
+                <img src="otaru-canal-real.jpg" alt="小樽運河の実際の風景写真" decoding="async">
                 <figcaption>
                   <strong>北海道小樽市</strong>
                   <span>自分の原点。落ち着いて考え、前へ進む力をくれた場所。</span>
                 </figcaption>
               </figure>
               <figure class="story-slide">
-                <img src="story-otaru-learning.png" alt="小樽の風景と学習机を組み合わせた画像">
+                <img src="story-otaru-learning.png" alt="小樽の風景と学習机を組み合わせた画像" loading="lazy" decoding="async">
                 <figcaption>
                   <strong>小樽から新しい挑戦へ</strong>
                   <span>原点を大切にしながら、新しい学びへ進んでいること。</span>
                 </figcaption>
               </figure>
               <figure class="story-slide">
-                <img src="story-programming-desk.png" alt="プログラミング学習をしている机の画像">
+                <img src="story-programming-desk.png" alt="プログラミング学習をしている机の画像" loading="lazy" decoding="async">
                 <figcaption>
                   <strong>プログラミング学習</strong>
                   <span>焦らず、基本から一つずつ積み重ねている姿勢。</span>
                 </figcaption>
               </figure>
               <figure class="story-slide">
-                <img src="story-care-tech.png" alt="介護経験とデジタルツールを組み合わせた画像">
+                <img src="story-care-tech.png" alt="介護経験とデジタルツールを組み合わせた画像" loading="lazy" decoding="async">
                 <figcaption>
                   <strong>介護経験を活かす</strong>
                   <span>現場で学んだ気配りを、使いやすい画面作りにつなげたいこと。</span>
                 </figcaption>
               </figure>
               <figure class="story-slide">
-                <img src="image-coding.svg" alt="プログラミング学習をイメージした画像">
+                <img src="image-coding.svg" alt="プログラミング学習をイメージした画像" loading="lazy" decoding="async">
                 <figcaption>
                   <strong>これからの制作</strong>
                   <span>学んだことを形にし、伝わるプロフィールへ育てていくこと。</span>
@@ -335,8 +347,8 @@
           <div class="readable-text">
             <p class="key-message">将来の選択肢を広げ、これまでの経験を新しい形で活かすために、Web制作を学んでいます。</p>
             <p>
-              介護の仕事を長く続ける中で、これからの働き方や成長について考えるようになりました。
-              その中で、Web制作を学び、自分の経験を新しい形で活かしたいと思うようになりました。
+              介護の仕事を続ける中で、これからの働き方や成長について考えるようになりました。
+              その中で、自分の経験を新しい形で活かせるWeb制作に関心を持ちました。
             </p>
             <p>
               ただ技術を覚えるだけではなく、見る人にとってわかりやすく、
@@ -553,8 +565,8 @@
           <div class="readable-text">
             <p class="key-message">このサイトは、Web制作の学習成果として、自分のことをわかりやすく伝えるために作りました。</p>
             <p>
-              初めて見る人にも、自分がどのような経験をしてきたのか、今なぜプログラミングを学んでいるのかが伝わるように意識しました。
-              文章をただ並べるだけではなく、プロフィール、経歴、学習目標、好きなことに分けることで、読みたい情報を探しやすくしています。
+              初めて見る人にも、これまでの経験と、今なぜプログラミングを学んでいるのかが伝わるように意識しました。
+              プロフィール、経歴、学習目標、好きなことに分けて、読みたい情報を探しやすくしています。
             </p>
             <p>
               工夫した点は、介護の経験とこれから学びたいITの分野をつなげて説明したことです。
@@ -674,6 +686,11 @@
             このページは、プロフィールとWeb制作の学習成果を見てもらうために公開しています。
             個人の連絡先やSNSは、安心して見てもらえるように掲載していません。共有するときは、下のボタンまたはQRコードから確認できます。
           </p>
+          <div class="mobile-check-note">
+            <strong>スマートフォンで確認する場合</strong>
+            <span>携帯のブラウザで下の公開URLを開くと、同じプロフィールページを確認できます。</span>
+            <a href="https://tetu5473.github.io/profile/" target="_blank" rel="noopener noreferrer">https://tetu5473.github.io/profile/</a>
+          </div>
           <ul class="contact-list">
             <li><strong>公開目的</strong><span>プロフィールと学習成果の共有</span></li>
             <li><strong>連絡先</strong><span>このページでは非公開</span></li>
@@ -682,7 +699,7 @@
           <div class="share-actions">
             <a href="https://tetu5473.github.io/profile/" target="_blank" rel="noopener noreferrer">公開ページを開く</a>
             <button class="copy-link-button" type="button" data-url="https://tetu5473.github.io/profile/">URLをコピー</button>
-            <span class="copy-status" aria-live="polite"></span>
+            <span class="copy-status" aria-live="polite" role="status"></span>
           </div>
         </div>
         <div class="qr-card">
@@ -711,7 +728,7 @@
     const storyCarousel = document.querySelector(".story-carousel");
     const copyLinkButton = document.querySelector(".copy-link-button");
     const copyStatus = document.querySelector(".copy-status");
-    const profileActionButtons = document.querySelectorAll(".profile-actions button");
+    const tabJumpControls = document.querySelectorAll("[data-open-tab]");
     const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     let currentStoryIndex = 0;
     let storyAutoTimer;
@@ -776,13 +793,18 @@
       });
     });
 
-    profileActionButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        activateTab(button.dataset.openTab, false);
+    tabJumpControls.forEach((control) => {
+      control.addEventListener("click", () => {
+        activateTab(control.dataset.openTab, false);
 
-        const target = document.getElementById(button.dataset.scrollTarget);
+        const target = document.getElementById(control.dataset.scrollTarget);
         if (target) {
           target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        } else {
+          tabStatus.scrollIntoView({
             behavior: "smooth",
             block: "start"
           });
