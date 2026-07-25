@@ -24,6 +24,7 @@ body {
   color: var(--ink);
   font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.9;
 }
 
@@ -59,6 +60,7 @@ body {
   margin: 2px 0 0;
   color: rgba(255, 255, 255, 0.82);
   font-size: 16px;
+  font-weight: 700;
 }
 
 .otaru-hero {
@@ -155,6 +157,7 @@ body {
   margin: 0;
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
+  font-weight: 700;
   line-height: 1.8;
   animation: heroTextReveal 0.95s ease-out 0.28s both;
 }
@@ -227,6 +230,7 @@ body {
 .lead {
   margin: 0 0 18px;
   color: #344254;
+  font-weight: 600;
 }
 
 .profile-actions {
@@ -358,6 +362,7 @@ body {
 
 .share-note span {
   font-size: 16px;
+  font-weight: 600;
 }
 
 .profile-summary {
@@ -384,6 +389,7 @@ body {
 .profile-summary span {
   color: #263545;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.75;
 }
 
@@ -409,6 +415,7 @@ body {
 .viewer-guide span {
   color: #334155;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.75;
 }
 
@@ -484,6 +491,7 @@ body {
 .tab-status span {
   color: #445466;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .tab-panels {
@@ -654,6 +662,7 @@ p {
 .story-slide span {
   color: var(--muted);
   font-size: 16px;
+  font-weight: 600;
 }
 
 .story-arrow {
@@ -799,6 +808,7 @@ p {
   margin: 0;
   color: #334155;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.8;
 }
 
@@ -839,6 +849,7 @@ p {
   max-width: 48em;
   margin: 0 0 18px;
   color: #334155;
+  font-weight: 600;
 }
 
 .experience-bridge {
@@ -859,6 +870,7 @@ p {
 .experience-bridge span {
   color: #334155;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.7;
 }
 
@@ -879,6 +891,7 @@ p {
   max-width: 48em;
   margin: 0 0 18px;
   color: #334155;
+  font-weight: 600;
 }
 
 .reference-block {
@@ -892,6 +905,7 @@ p {
   max-width: 48em;
   margin: 0 0 16px;
   color: #334155;
+  font-weight: 600;
 }
 
 .reference-link {
@@ -926,12 +940,14 @@ p {
 .external-link-note span {
   color: #334155;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.7;
 }
 
 .reference-note {
-  color: var(--muted);
+  color: #4f5f70;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .skill-grid {
@@ -980,6 +996,7 @@ p {
   margin: 0;
   color: #334155;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.8;
 }
 
@@ -995,6 +1012,7 @@ p {
 .portfolio-intro {
   margin: -4px 0 18px;
   color: #445466;
+  font-weight: 600;
 }
 
 .portfolio-summary {
@@ -1071,6 +1089,7 @@ p {
 .portfolio-card p {
   margin: 0;
   color: #334155;
+  font-weight: 600;
   line-height: 1.85;
 }
 
@@ -1098,6 +1117,7 @@ p {
 .portfolio-detail-grid span {
   color: #334155;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.6;
 }
 
@@ -1108,6 +1128,7 @@ p {
   border-radius: 8px;
   background: #fff;
   color: #334155;
+  font-weight: 600;
 }
 
 .future-note {
@@ -1147,6 +1168,7 @@ p {
 .timeline span {
   display: block;
   color: #334155;
+  font-weight: 600;
   line-height: 1.8;
 }
 
@@ -1168,6 +1190,7 @@ p {
 .history-summary p {
   margin: 0;
   color: #334155;
+  font-weight: 600;
   line-height: 1.85;
 }
 
@@ -1178,6 +1201,7 @@ p {
   border-radius: 8px;
   background: #f8fafc;
   color: #334155;
+  font-weight: 600;
 }
 
 .interest-card {
@@ -1297,6 +1321,7 @@ p {
   max-width: 46em;
   margin: 0 auto;
   color: #334155;
+  font-weight: 600;
 }
 
 .contact-block h2 {
@@ -1306,6 +1331,7 @@ p {
 .contact-block p {
   margin-bottom: 16px;
   color: #334155;
+  font-weight: 600;
   line-height: 1.85;
 }
 
@@ -1327,6 +1353,7 @@ p {
 .mobile-check-note span {
   color: #334155;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.7;
 }
 
@@ -1368,8 +1395,9 @@ p {
 }
 
 .contact-list span {
-  color: var(--muted);
+  color: #4f5f70;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .share-actions {
@@ -1503,6 +1531,7 @@ th {
 
 td {
   color: #334155;
+  font-weight: 600;
 }
 
 .qualification-list {
@@ -1534,9 +1563,10 @@ footer {
   margin: 28px 0 0;
   padding-top: 12px;
   border-top: 1px solid var(--line);
-  color: var(--muted);
+  color: #4f5f70;
   text-align: center;
   font-size: 16px;
+  font-weight: 600;
 }
 
 footer p {
