@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="太田鉄也のプロフィールサイト制作について、今日のPDCAと1週間の作業内容をまとめた報告ページです。">
+  <title>1週間の学習・制作報告</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #eef1f4;
+      color: #1b2430;
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.85;
+    }
+
+    .page {
+      max-width: 1040px;
+      margin: 24px auto;
+      padding: 0 24px 40px;
+      border: 1px solid #d8dee6;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 16px 42px rgba(27, 36, 48, 0.12);
+    }
+
+    header {
+      margin: 0 -24px;
+      padding: 28px 24px 26px;
+      border-radius: 8px 8px 0 0;
+      background: #17476d;
+      color: #fff;
+      text-align: center;
+    }
+
+    header span {
+      display: block;
+      margin-bottom: 6px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.35;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #d8dee6;
+      color: #15344e;
+      font-size: 24px;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      color: #245f8f;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 14px;
+      font-weight: 600;
+    }
+
+    a {
+      color: #245f8f;
+      font-weight: 700;
+    }
+
+    .lead {
+      margin: 22px 0 0;
+      padding: 20px 22px;
+      border: 1px solid #c8d7e5;
+      border-radius: 8px;
+      background: #f7fbff;
+    }
+
+    .lead strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #17476d;
+      font-size: 20px;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .summary-grid,
+    .pdca-grid,
+    .week-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .summary-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pdca-grid,
+    .week-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+      padding: 20px;
+      border: 1px solid #d8dee6;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(27, 36, 48, 0.07);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #377b62;
+      font-size: 17px;
+    }
+
+    .card p {
+      margin: 0;
+    }
+
+    ul,
+    ol {
+      margin: 0;
+      padding-left: 24px;
+      font-weight: 600;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .talk-box {
+      padding: 22px;
+      border: 1px solid #cfe0d8;
+      border-radius: 8px;
+      background: #f8fbf9;
+    }
+
+    .talk-box p {
+      margin-bottom: 10px;
+    }
+
+    .talk-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: inline-grid;
+      min-height: 50px;
+      padding: 10px 18px;
+      place-items: center;
+      border: 1px solid #b8cee1;
+      border-radius: 8px;
+      background: #17476d;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .links a + a {
+      background: #fff;
+      color: #245f8f;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 14px;
+      border-top: 1px solid #d8dee6;
+      color: #4f5f70;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        background: #fff;
+        font-size: 17px;
+      }
+
+      .page {
+        margin: 0;
+        padding: 0 16px 32px;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      header {
+        margin: 0 -16px;
+        padding: 22px 16px 20px;
+        border-radius: 0;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      .summary-grid,
+      .pdca-grid,
+      .week-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card,
+      .lead,
+      .talk-box {
+        padding: 18px;
+      }
+
+      .links {
+        display: grid;
+      }
+
+      .links a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <span>学習・制作報告</span>
+      <h1>プロフィールサイト制作 1週間のまとめ</h1>
+    </header>
+
+    <section class="lead" aria-label="報告の概要">
+      <strong>報告する内容</strong>
+      <p>
+        この1週間は、太田鉄也のプロフィールサイトを「人に見せやすい形」に整えました。
+        文章、画像、スマートフォン表示、公開ページ、読みやすさを中心に改善しました。
+      </p>
+    </section>
+
+    <section class="section" aria-label="一週間でできたこと">
+      <h2>この1週間でやったこと</h2>
+      <div class="summary-grid">
+        <div class="card">
+          <strong>見やすくした</strong>
+          <p>文章の長さ、行間、余白、文字の太さを調整し、初めて見る人にも読みやすくしました。</p>
+        </div>
+        <div class="card">
+          <strong>使いやすくした</strong>
+          <p>タブ、上へ戻るボタン、画像の切り替え、URLコピーなど、操作しやすい形にしました。</p>
+        </div>
+        <div class="card">
+          <strong>公開できる形にした</strong>
+          <p>インターネット上で公開し、携帯からも同じURLで確認できるようにしました。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="一週間の作業内容">
+      <h2>作業内容をわかりやすくまとめると</h2>
+      <div class="week-grid">
+        <div class="card">
+          <h3>1. プロフィールの内容整理</h3>
+          <ul>
+            <li>自己紹介、経歴、学習、好きなことをタブで分けました。</li>
+            <li>介護経験とWeb制作の学習がつながるように文章を整えました。</li>
+            <li>プロフィール作成に関係ない内容は前に出しすぎないようにしました。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>2. 画像と見た目の改善</h3>
+          <ul>
+            <li>小樽の画像や学習イメージの画像を入れました。</li>
+            <li>画像が自動で切り替わるようにしました。</li>
+            <li>動きが強すぎないように、自然に見えるよう調整しました。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>3. スマートフォン対応</h3>
+          <ul>
+            <li>携帯でも文字が読みやすいように調整しました。</li>
+            <li>ボタンやタブを押しやすい大きさにしました。</li>
+            <li>携帯で確認しやすいように公開URLとQRコードを用意しました。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>4. 公開ページとしての調整</h3>
+          <ul>
+            <li>インターネット上で誰でも見られるページにしました。</li>
+            <li>個人の連絡先やSNSは載せない形にしました。</li>
+            <li>プロアカのYouTubeリンクは、学習の参考として説明を入れました。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>5. 読みやすさの改善</h3>
+          <ul>
+            <li>細く見える文字を少し太くしました。</li>
+            <li>資格欄を1つずつ見やすい表示にしました。</li>
+            <li>初めて見る人向けに、見る順番の案内を追加しました。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>6. 記録を残した</h3>
+          <ul>
+            <li>作業内容と確認メモを残しました。</li>
+            <li>あとから何を直したか見返せるようにしました。</li>
+            <li>今日の報告用ページを作成しました。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="今日のPDCA">
+      <h2>今日のPDCA</h2>
+      <div class="pdca-grid">
+        <div class="card">
+          <strong>計画</strong>
+          <p>プロフィールサイトの文字が少し見づらい部分を、読みやすい太さにすることを目標にしました。</p>
+        </div>
+        <div class="card">
+          <strong>実行</strong>
+          <p>本文、説明文、表の文字、補足文など、細く見える部分を少し太めに調整しました。</p>
+        </div>
+        <div class="card">
+          <strong>確認</strong>
+          <p>表示が崩れていないか、ボタンの動きに問題がないか、公開ページに反映されているかを確認しました。</p>
+        </div>
+        <div class="card">
+          <strong>改善</strong>
+          <p>次回は、実際に講師や他の人に見てもらい、読みづらい場所がないか確認したいです。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="講師への説明例">
+      <h2>講師に説明するときの言い方</h2>
+      <div class="talk-box">
+        <p>
+          この1週間は、プロフィールサイトを人に見せられる形に整えました。
+          自己紹介、経歴、学習内容、好きなことをタブで分けて、見たい情報を探しやすくしました。
+        </p>
+        <p>
+          また、小樽の画像や学習イメージの画像を入れて、文章だけにならないようにしました。
+          スマートフォンでも見やすいように、文字の大きさ、太さ、ボタンの押しやすさも調整しました。
+        </p>
+        <p>
+          最後に、インターネット上で公開し、携帯でも確認できるようにしました。
+          今後は、さらに文章を短くしたり、見た人の意見をもとに改善していきたいです。
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="次にやること">
+      <h2>次にやること</h2>
+      <ol>
+        <li>講師に見てもらい、読みづらい部分を確認する。</li>
+        <li>文章が長いところをさらに短くする。</li>
+        <li>スマートフォンでの見え方をもう一度確認する。</li>
+        <li>学習成果が増えたら、プロフィールに自然に追加する。</li>
+      </ol>
+      <div class="links">
+        <a href="https://tetu5473.github.io/profile/" target="_blank" rel="noopener noreferrer">プロフィール公開ページを開く</a>
+        <a href="index.html">プロフィールの元ページを見る</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>作成日：2026年7月25日 / 太田鉄也 プロフィールサイト制作報告</p>
+    </footer>
+  </main>
+</body>
+</html>
