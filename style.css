@@ -1059,14 +1059,35 @@ p {
 }
 
 .learning-result ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
   margin: 0;
-  padding-left: 24px;
+  padding: 0;
   color: #263545;
   font-weight: 700;
+  list-style: none;
 }
 
-.learning-result li + li {
-  margin-top: 6px;
+.learning-result li {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid #cfe0d8;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.learning-result li strong {
+  color: #173f33;
+  font-size: 17px;
+}
+
+.learning-result li span {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
 }
 
 .portfolio-card {
@@ -1227,12 +1248,17 @@ p {
   border-radius: 8px;
   background: #f8fafc;
   color: #334155;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.75;
 }
 
 .interest-card {
   position: relative;
   padding-top: 18px;
+}
+
+.interest-card p {
+  font-weight: 700;
 }
 
 .interest-tag {
@@ -1333,7 +1359,7 @@ p {
 .contact-block p {
   margin-bottom: 16px;
   color: #334155;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.85;
 }
 
@@ -1355,7 +1381,7 @@ p {
 .mobile-check-note span {
   color: #334155;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.7;
 }
 
@@ -1384,7 +1410,7 @@ p {
 .report-share-note span {
   color: #334155;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.7;
 }
 
@@ -2156,6 +2182,10 @@ footer p {
   .report-share-note,
   .learning-result {
     padding: 14px 16px;
+  }
+
+  .learning-result ul {
+    grid-template-columns: 1fr;
   }
 
   .report-share-note div {
