@@ -1043,6 +1043,32 @@ p {
   line-height: 1.5;
 }
 
+.learning-result {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 18px;
+  padding: 20px 22px;
+  border: 1px solid #bdd8cc;
+  border-radius: 8px;
+  background: #f8fbf9;
+}
+
+.learning-result strong {
+  color: var(--green);
+  font-size: 18px;
+}
+
+.learning-result ul {
+  margin: 0;
+  padding-left: 24px;
+  color: #263545;
+  font-weight: 700;
+}
+
+.learning-result li + li {
+  margin-top: 6px;
+}
+
 .portfolio-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
@@ -1362,6 +1388,54 @@ p {
   font-size: 16px;
   font-weight: 700;
   overflow-wrap: anywhere;
+}
+
+.report-share-note {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 16px 18px;
+  border: 1px solid #efd8a8;
+  border-radius: 8px;
+  background: #fffaf0;
+}
+
+.report-share-note strong {
+  color: #6b4515;
+  font-size: 17px;
+}
+
+.report-share-note span {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.report-share-note div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.report-share-note a {
+  display: inline-grid;
+  min-height: 44px;
+  padding: 8px 14px;
+  place-items: center;
+  border: 1px solid #d9bd83;
+  border-radius: 8px;
+  background: #fff;
+  color: #17476d;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.report-share-note a:hover,
+.report-share-note a:focus-visible {
+  outline: 3px solid rgba(165, 109, 29, 0.24);
+  outline-offset: 2px;
 }
 
 .public-info {
@@ -2102,8 +2176,19 @@ footer p {
 
   .self-summary,
   .external-link-note,
-  .mobile-check-note {
+  .mobile-check-note,
+  .report-share-note,
+  .learning-result {
     padding: 14px 16px;
+  }
+
+  .report-share-note div {
+    display: grid;
+  }
+
+  .report-share-note a {
+    width: 100%;
+    min-height: 52px;
   }
 
   .qualification-list {
