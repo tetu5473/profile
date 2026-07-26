@@ -1232,31 +1232,7 @@ p {
 
 .interest-card {
   position: relative;
-  padding-top: 20px;
-}
-
-.interest-icon {
-  display: grid;
-  width: 38px;
-  height: 38px;
-  margin-bottom: 10px;
-  place-items: center;
-  border: 1px solid #c8d7e5;
-  border-radius: 50%;
-  background: #f7fbff;
-  color: var(--blue);
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.interest-card:nth-child(2n) .interest-icon {
-  background: #f8fbf9;
-  color: var(--green);
-}
-
-.interest-card:nth-child(3n) .interest-icon {
-  background: #fffaf0;
-  color: var(--amber);
+  padding-top: 18px;
 }
 
 .interest-tag {
