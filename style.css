@@ -339,6 +339,9 @@ body {
 }
 
 .profile-points li {
+  display: grid;
+  gap: 2px;
+  align-content: center;
   padding: 12px 10px;
   border: 1px solid #bfd0df;
   border-radius: 8px;
@@ -347,6 +350,13 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
+}
+
+.profile-points small {
+  color: #4f5f70;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .tab-nav {
