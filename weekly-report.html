@@ -96,6 +96,39 @@
       margin-top: 30px;
     }
 
+    .today-summary {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+      padding: 22px;
+      border: 1px solid #bdd8cc;
+      border-radius: 8px;
+      background: #f8fbf9;
+    }
+
+    .today-summary strong {
+      color: #173f33;
+      font-size: 21px;
+    }
+
+    .today-summary ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .today-summary li {
+      margin: 0;
+      padding: 14px 16px;
+      border: 1px solid #cfe0d8;
+      border-radius: 8px;
+      background: #fff;
+      color: #263545;
+      font-weight: 700;
+    }
+
     .summary-grid,
     .pdca-grid,
     .week-grid {
@@ -221,12 +254,14 @@
 
       .summary-grid,
       .pdca-grid,
-      .week-grid {
+      .week-grid,
+      .today-summary ul {
         grid-template-columns: 1fr;
       }
 
       .card,
       .lead,
+      .today-summary,
       .talk-box {
         padding: 18px;
       }
@@ -254,6 +289,15 @@
         この1週間は、太田鉄也のプロフィールサイトを「人に見せやすい形」に整えました。
         文章、画像、スマートフォン表示、公開ページ、読みやすさを中心に改善しました。
       </p>
+    </section>
+
+    <section class="today-summary" aria-label="本日の要点">
+      <strong>本日の要点</strong>
+      <ul>
+        <li>プロフィール上部の資格表示を見やすく調整</li>
+        <li>PCとスマートフォンで表示の違いを確認</li>
+        <li>修正内容をGitHub公開ページへ反映</li>
+      </ul>
     </section>
 
     <section class="section" aria-label="一週間でできたこと">
@@ -329,23 +373,23 @@
     </section>
 
     <section class="section" aria-label="今日のPDCA">
-      <h2>今日のPDCA</h2>
+      <h2>今日のPDCA（要約）</h2>
       <div class="pdca-grid">
         <div class="card">
           <strong>計画</strong>
-          <p>プロフィールサイトの文字が少し見づらい部分を、読みやすい太さにすることを目標にしました。</p>
+          <p>プロフィールを、PCでもスマートフォンでも見やすい表示に整える。</p>
         </div>
         <div class="card">
           <strong>実行</strong>
-          <p>本文、説明文、表の文字、補足文など、細く見える部分を少し太めに調整しました。</p>
+          <p>「介護支援専門員 約10年」の下に「（ケアマネジャー）」を追加し、2段で表示されるように修正。</p>
         </div>
         <div class="card">
           <strong>確認</strong>
-          <p>表示が崩れていないか、ボタンの動きに問題がないか、公開ページに反映されているかを確認しました。</p>
+          <p>PCとスマートフォンで見え方を確認し、GitHub公開ページにも反映。</p>
         </div>
         <div class="card">
           <strong>改善</strong>
-          <p>読みづらい場所がないか確認しながら、さらに分かりやすいページにしていきたいです。</p>
+          <p>今後も細かい文字や補足説明は、読みやすさを優先して整える。</p>
         </div>
       </div>
     </section>
@@ -364,7 +408,7 @@
     </section>
 
     <footer>
-      <p>作成日：2026年7月25日 / 太田鉄也 プロフィールサイト制作報告</p>
+      <p>更新日：2026年7月31日 / 太田鉄也 プロフィールサイト制作報告</p>
     </footer>
   </main>
 </body>
