@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="太田鉄也のプロフィールサイト。北海道小樽市でのルーツ、介護経験、Web制作とプログラミング学習への挑戦をまとめています。">
+  <meta name="description" content="太田鉄也のプロフィールサイト。介護経験23年を土台に、使う人にやさしいWeb制作を学ぶ姿をまとめています。">
   <meta property="og:title" content="太田鉄也 プロフィール">
-  <meta property="og:description" content="北海道小樽市でのルーツ、介護経験、Web制作とプログラミング学習への挑戦をまとめたプロフィールサイトです。">
+  <meta property="og:description" content="介護経験23年を土台に、使う人にやさしいWeb制作を学ぶ姿をまとめたプロフィールサイトです。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tetu5473.github.io/profile/">
   <meta property="og:image" content="https://tetu5473.github.io/profile/otaru-canal-real.jpg">
   <title>太田鉄也 プロフィール</title>
-  <link rel="stylesheet" href="style.css?v=20260726-02">
+  <link rel="stylesheet" href="style.css?v=20260731-01">
 </head>
 <body>
   <main class="page">
@@ -31,14 +31,30 @@
       <div class="otaru-hero-sweep" aria-hidden="true"></div>
       <div class="otaru-hero-text">
         <span>My Roots</span>
-        <h2>介護経験23年から、伝わるWeb制作へ。</h2>
-        <p>相手を思いやる経験を、見やすく迷わない画面作りに活かしています。</p>
+        <h2>介護経験23年を、Web制作へ。</h2>
+        <p>相手の立場で考える力を、見やすく迷わない画面作りに活かしています。</p>
+      </div>
+    </section>
+
+    <section class="top-overview" aria-label="プロフィールの見どころ">
+      <div>
+        <strong>経験</strong>
+        <span>介護現場で人と向き合ってきたこと</span>
+      </div>
+      <div>
+        <strong>学習</strong>
+        <span>HTML・CSS・JavaScript・Reactへの挑戦</span>
+      </div>
+      <div>
+        <strong>目標</strong>
+        <span>使う人にやさしいWeb制作をすること</span>
       </div>
     </section>
 
     <section class="profile">
       <div class="photo-frame">
         <img src="profile-photo-otaru-sharp-face.png" alt="太田鉄也のプロフィール写真" class="profile-photo">
+        <p class="photo-note">小樽出身。介護経験を活かしてWeb制作を学習中。</p>
       </div>
 
       <div class="profile-main">
@@ -51,7 +67,7 @@
         </p>
         <p class="lead">
           北海道小樽市出身です。介護現場で大切にしてきた「相手の立場で考える力」を、
-          見る人に伝わりやすいプロフィール作りに活かしています。
+          見やすく伝わる画面作りに活かしています。
         </p>
         <div class="profile-actions" aria-label="プロフィール内の主な導線">
           <button class="primary-action" type="button" data-open-tab="learning-tab" data-scroll-target="portfolio-section">学習成果を見る</button>
@@ -71,31 +87,28 @@
       <span>人と向き合ってきた経験を土台に、使う人にやさしいWeb制作へ挑戦していることをまとめています。</span>
     </section>
 
-    <section class="profile-summary" aria-label="プロフィールの要約">
-      <div>
-        <strong>経験</strong>
-        <span>介護現場で約23年、人と向き合ってきました。</span>
-      </div>
-      <div>
-        <strong>強み</strong>
-        <span>相手の立場を想像し、安心してもらえる関わりを大切にしています。</span>
-      </div>
-      <div>
-        <strong>挑戦</strong>
-        <span>Web制作を学び、見やすく迷わない画面作りに取り組んでいます。</span>
-      </div>
-    </section>
-
     <section class="viewer-guide" aria-label="初めて見る方への案内">
       <div>
         <strong>はじめて見る方へ</strong>
-        <span>まずは「プロフィール」、次に「経歴・歩み」「学習・これから」の順に見ると、これまでの経験と今の挑戦が分かりやすいです。</span>
+        <span>気になる項目から見られます。短く確認したい場合は、まず「学習・これから」がおすすめです。</span>
       </div>
       <div class="viewer-guide-actions">
         <button type="button" data-open-tab="profile-tab">プロフィール</button>
         <button type="button" data-open-tab="history-tab">経歴・歩み</button>
         <button type="button" data-open-tab="learning-tab">学習・これから</button>
       </div>
+    </section>
+
+    <section class="quick-read" aria-label="短く確認したい方へのまとめ">
+      <div>
+        <span>まずここだけ</span>
+        <strong>介護経験を活かして、Web制作を学んでいます。</strong>
+      </div>
+      <ul>
+        <li>23年の介護経験を、見やすい画面作りに活かしたい</li>
+        <li>HTML・CSS・JavaScriptを使ってプロフィールを制作</li>
+        <li>GitHub Pagesで公開し、スマホでも確認しやすく調整</li>
+      </ul>
     </section>
 
     <div class="tab-status" id="tab-status" aria-live="polite">
@@ -464,6 +477,10 @@
           <p class="portfolio-intro">
             作ったもの、学んだこと、工夫したことを短く整理しています。
           </p>
+          <div class="portfolio-highlight" aria-label="学習成果の要約">
+            <strong>今回の成果</strong>
+            <span>プロフィールサイトを作り、GitHub Pagesで公開し、PCとスマートフォンで見やすく調整しました。</span>
+          </div>
           <div class="portfolio-summary" aria-label="制作物の概要">
             <div>
               <strong>公開済み</strong>
@@ -476,6 +493,30 @@
             <div>
               <strong>学習中</strong>
               <span>HTML・CSS・JavaScript・React</span>
+            </div>
+          </div>
+          <div class="before-after-note" aria-label="改善したことのまとめ">
+            <strong>改善したこと</strong>
+            <p>
+              最初は文章や画像を並べるだけでしたが、今はタブ、画像の切り替え、共有リンク、
+              スマートフォン用メニューを入れて、見る人が迷いにくいプロフィールに近づけています。
+            </p>
+          </div>
+          <div class="progress-board" aria-label="完成、改善中、次にやること">
+            <div class="progress-card progress-done">
+              <span>完成</span>
+              <strong>プロフィール公開</strong>
+              <p>GitHub Pagesで公開し、PCとスマートフォンで確認できる状態にしました。</p>
+            </div>
+            <div class="progress-card progress-active">
+              <span>改善中</span>
+              <strong>読みやすさ調整</strong>
+              <p>文章量、余白、ボタンの押しやすさを見直しています。</p>
+            </div>
+            <div class="progress-card progress-next">
+              <span>次にやること</span>
+              <strong>公開後の最終確認</strong>
+              <p>GitHub反映後、スマートフォンで表示と共有リンクを確認します。</p>
             </div>
           </div>
           <div class="learning-result" aria-label="この制作でできるようになったこと">
@@ -623,8 +664,8 @@
               <h3>映画</h3>
               <span class="interest-tag">アクション・SF</span>
               <p>
-                ジャッキー・チェンのカンフー映画や「ターミネーター」がきっかけで好きになりました。
-                特にスピード感のある作品が好きです。
+                ジャッキー・チェンの映画や「ターミネーター」がきっかけで好きになりました。
+                スピード感のある作品が好きです。
               </p>
             </article>
             <article class="interest-card">
@@ -639,7 +680,7 @@
               <h3>ゲーム</h3>
               <span class="interest-tag">FPS・レトロゲーム</span>
               <p>
-                PUBGのように、仲間と協力して遊ぶゲームが好きです。
+                仲間と協力して遊ぶゲームが好きです。
                 レトロゲームでは、くにおくんシリーズやドラゴンクエストシリーズが印象に残っています。
               </p>
             </article>
@@ -647,7 +688,7 @@
               <h3>野球</h3>
               <span class="interest-tag">プレー経験・観戦</span>
               <p>
-                野球は小学校3年生から高校3年生まで続け、高校時代は硬式野球部でファーストを守っていました。
+                野球は小学校3年生から高校3年生まで続けました。
                 今は観戦が中心で、日本ハムやメジャーリーグにも注目しています。
               </p>
             </article>
@@ -680,7 +721,7 @@
       </p>
     </section>
 
-    <section class="content-block contact-block">
+    <section class="content-block contact-block" id="share-section">
       <h2>公開について</h2>
       <div class="public-info">
         <div>
@@ -688,13 +729,14 @@
             このページは、プロフィールとWeb制作の学習成果を見てもらうために公開しています。
             個人の連絡先やSNSは掲載せず、安心して共有できる内容にしています。
           </p>
+          <p class="updated-note">最終調整日：2026年7月31日</p>
           <div class="mobile-check-note">
-            <strong>スマートフォンで確認する場合</strong>
-            <span>携帯のブラウザで下の公開URLを開くと、同じプロフィールページを確認できます。</span>
-            <a href="https://tetu5473.github.io/profile/" target="_blank" rel="noopener noreferrer">https://tetu5473.github.io/profile/</a>
+            <strong>スマートフォン確認</strong>
+            <span>携帯のブラウザでも、同じプロフィールページを確認できます。</span>
+            <a href="https://tetu5473.github.io/profile/" target="_blank" rel="noopener noreferrer">公開ページを開く（スマホ確認用）</a>
           </div>
           <div class="report-share-note">
-            <strong>Zoom共有用の報告資料</strong>
+            <strong>共有用資料</strong>
             <span>1週間の報告ページをPDFと画像でも確認できます。Zoomなどで共有しやすい資料です。</span>
             <div>
               <a href="weekly-report.pdf" target="_blank" rel="noopener noreferrer">PDFを開く</a>
@@ -707,10 +749,26 @@
             <li><strong>連絡先</strong><span>このページでは非公開</span></li>
             <li><strong>SNS</strong><span>現在は掲載していません</span></li>
           </ul>
-          <div class="share-actions">
-            <a href="https://tetu5473.github.io/profile/" target="_blank" rel="noopener noreferrer">公開ページを開く</a>
-            <a href="weekly-report.html">1週間の報告ページを開く</a>
-            <button class="copy-link-button" type="button" data-url="https://tetu5473.github.io/profile/">URLをコピー</button>
+          <div class="share-panel" aria-label="共有リンク">
+            <strong>共有リンク</strong>
+            <div class="share-groups">
+              <div class="share-group">
+                <span>プロフィール共有</span>
+                <div class="share-actions">
+                  <a href="https://tetu5473.github.io/profile/" target="_blank" rel="noopener noreferrer">公開ページを開く</a>
+                  <button class="copy-link-button" type="button" data-url="https://tetu5473.github.io/profile/">URLをコピー</button>
+                </div>
+              </div>
+              <div class="share-group">
+                <span>報告資料共有</span>
+                <div class="share-actions">
+                  <a href="weekly-report.html">報告ページ</a>
+                  <a href="weekly-report.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                  <a href="weekly-report.png" target="_blank" rel="noopener noreferrer">画像</a>
+                  <button class="copy-report-button" type="button" data-url="https://tetu5473.github.io/profile/weekly-report.html">報告URLをコピー</button>
+                </div>
+              </div>
+            </div>
             <span class="copy-status" aria-live="polite" role="status"></span>
           </div>
         </div>
@@ -721,11 +779,42 @@
       </div>
     </section>
 
+    <section class="final-check" aria-label="公開前の確認">
+      <span>Final Check</span>
+      <h2>公開前に確認したこと</h2>
+      <ul>
+        <li>スマートフォンでも文字とボタンが見やすい</li>
+        <li>個人の連絡先やSNSを掲載していない</li>
+        <li>プロフィール、学習成果、共有資料へ移動しやすい</li>
+        <li>講師・受講生にも見せやすい表現に整えている</li>
+      </ul>
+    </section>
+
+    <section class="next-guide" aria-label="次に見てほしい場所">
+      <div>
+        <span>Next Step</span>
+        <h2>次に見てほしい場所</h2>
+        <p>
+          このプロフィールを見たあとに、学習成果や共有用の資料をすぐ確認できるようにしました。
+        </p>
+      </div>
+      <div class="next-guide-actions">
+        <button type="button" data-open-tab="learning-tab" data-scroll-target="portfolio-section">学習成果を見る</button>
+        <button type="button" data-open-tab="interest-tab">好きなことを見る</button>
+        <button type="button" data-open-tab="learning-tab" data-scroll-target="share-section">共有リンクを見る</button>
+      </div>
+    </section>
+
     <footer>
       <p class="thanks-message">最後まで見ていただき、ありがとうございます。</p>
       <p>&copy; 2026 Tetsuya Ota Profile</p>
     </footer>
   </main>
+  <nav class="mobile-bottom-menu" aria-label="スマートフォン用の簡単メニュー">
+    <button type="button" data-open-tab="profile-tab">トップ</button>
+    <button type="button" data-open-tab="learning-tab" data-scroll-target="portfolio-section">学習成果</button>
+    <button type="button" data-open-tab="learning-tab" data-scroll-target="share-section">共有</button>
+  </nav>
   <button class="back-to-top" type="button" aria-label="ページの一番上に戻る">↑ 上へ</button>
   <script>
     const tabButtons = document.querySelectorAll(".tab-button");
@@ -739,8 +828,10 @@
     const storyToggleButton = document.querySelector(".story-toggle");
     const storyCarousel = document.querySelector(".story-carousel");
     const copyLinkButton = document.querySelector(".copy-link-button");
+    const copyReportButton = document.querySelector(".copy-report-button");
     const copyStatus = document.querySelector(".copy-status");
     const tabJumpControls = document.querySelectorAll("[data-open-tab]");
+    const mobileMenuButtons = document.querySelectorAll(".mobile-bottom-menu button");
     const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     let currentStoryIndex = 0;
     let storyAutoTimer;
@@ -763,6 +854,10 @@
         text: "映画、音楽、ゲーム、野球、旅行など、人柄が伝わる趣味を紹介しています。"
       }
     };
+
+    mobileMenuButtons.forEach((button) => {
+      button.classList.toggle("is-current", button.dataset.openTab === "profile-tab");
+    });
 
     function activateTab(targetId, shouldScrollStatus = true) {
       const activeButton = document.querySelector(`[data-tab="${targetId}"]`);
@@ -790,6 +885,10 @@
       targetPanel.hidden = false;
 
       tabStatus.innerHTML = `<strong>${description.title}</strong><span>${description.text}</span>`;
+
+      mobileMenuButtons.forEach((button) => {
+        button.classList.toggle("is-current", button.dataset.openTab === targetId);
+      });
 
       if (shouldScrollStatus) {
         tabStatus.scrollIntoView({
@@ -937,6 +1036,17 @@
         copyStatus.textContent = "URL: " + copyLinkButton.dataset.url;
       }
     });
+
+    if (copyReportButton) {
+      copyReportButton.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(copyReportButton.dataset.url);
+          copyStatus.textContent = "報告ページのURLをコピーしました";
+        } catch (error) {
+          copyStatus.textContent = "報告URL: " + copyReportButton.dataset.url;
+        }
+      });
+    }
   </script>
 </body>
 </html>

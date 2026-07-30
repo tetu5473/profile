@@ -173,6 +173,34 @@ body {
   border-bottom: 1px solid var(--line);
 }
 
+.top-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 20px 0 0;
+}
+
+.top-overview div {
+  display: grid;
+  gap: 5px;
+  padding: 16px 18px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f7fbff;
+}
+
+.top-overview strong {
+  color: var(--blue);
+  font-size: 17px;
+}
+
+.top-overview span {
+  color: #263545;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
 .photo-frame {
   text-align: center;
 }
@@ -191,9 +219,16 @@ body {
 }
 
 .photo-note {
-  margin: 8px 0 0;
-  color: var(--muted);
+  margin: 12px auto 0;
+  max-width: 240px;
+  padding: 10px 12px;
+  border: 1px solid #cfe0d8;
+  border-radius: 8px;
+  background: #f8fbf9;
+  color: #173f33;
   font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 .profile-main h2 {
@@ -333,6 +368,7 @@ body {
 }
 
 .tab-button {
+  position: relative;
   min-height: 58px;
   padding: 12px 14px;
   border: 1px solid transparent;
@@ -363,34 +399,6 @@ body {
 .share-note span {
   font-size: 16px;
   font-weight: 600;
-}
-
-.profile-summary {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin: 18px 0 0;
-}
-
-.profile-summary div {
-  display: grid;
-  gap: 6px;
-  padding: 18px 20px;
-  border: 1px solid #cfe0d8;
-  border-radius: 8px;
-  background: #f8fbf9;
-}
-
-.profile-summary strong {
-  color: var(--green);
-  font-size: 16px;
-}
-
-.profile-summary span {
-  color: #263545;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.75;
 }
 
 .viewer-guide {
@@ -446,6 +454,54 @@ body {
   outline-offset: 2px;
 }
 
+.quick-read {
+  display: grid;
+  grid-template-columns: minmax(0, 300px) 1fr;
+  gap: 18px;
+  align-items: center;
+  margin: 18px 0 0;
+  padding: 20px 22px;
+  border: 1px solid #bdd8cc;
+  border-radius: 8px;
+  background: #f8fbf9;
+}
+
+.quick-read div {
+  display: grid;
+  gap: 6px;
+}
+
+.quick-read span {
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.quick-read strong {
+  color: #173f33;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.quick-read ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quick-read li {
+  padding: 12px 14px;
+  border: 1px solid #cfe0d8;
+  border-radius: 8px;
+  background: #fff;
+  color: #263545;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
 .section-kicker {
   display: inline-block;
   margin-bottom: 4px;
@@ -468,7 +524,21 @@ body {
   border-color: #9fb9d1;
   background: #245f8f;
   color: #fff;
-  box-shadow: 0 4px 12px rgba(27, 36, 48, 0.12);
+  box-shadow: 0 8px 18px rgba(27, 36, 48, 0.18);
+}
+
+.tab-button.is-active::after {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.3;
+  content: "表示中";
 }
 
 .tab-status {
@@ -1012,7 +1082,29 @@ p {
 .portfolio-intro {
   margin: -4px 0 18px;
   color: #445466;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.portfolio-highlight {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 18px;
+  padding: 18px 20px;
+  border: 1px solid #bdd8cc;
+  border-radius: 8px;
+  background: #f8fbf9;
+}
+
+.portfolio-highlight strong {
+  color: var(--green);
+  font-size: 18px;
+}
+
+.portfolio-highlight span {
+  color: #173f33;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.7;
 }
 
 .portfolio-summary {
@@ -1041,6 +1133,93 @@ p {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
+}
+
+.before-after-note {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 18px;
+  padding: 18px 20px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.before-after-note strong {
+  color: #17476d;
+  font-size: 18px;
+}
+
+.before-after-note p {
+  margin: 0;
+  color: #334155;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.progress-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 0 0 18px;
+}
+
+.progress-card {
+  display: grid;
+  gap: 7px;
+  padding: 18px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.progress-card span {
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.progress-card strong {
+  color: #15344e;
+  font-size: 18px;
+}
+
+.progress-card p {
+  margin: 0;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.progress-done {
+  border-color: #bdd8cc;
+  background: #f8fbf9;
+}
+
+.progress-done span {
+  background: var(--green);
+}
+
+.progress-active {
+  background: #f7fbff;
+}
+
+.progress-active span {
+  background: var(--blue);
+}
+
+.progress-next {
+  border-color: #efd8a8;
+  background: #fffaf0;
+}
+
+.progress-next span {
+  background: var(--amber);
 }
 
 .learning-result {
@@ -1136,7 +1315,7 @@ p {
 .portfolio-card p {
   margin: 0;
   color: #334155;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.85;
 }
 
@@ -1164,7 +1343,7 @@ p {
 .portfolio-detail-grid span {
   color: #334155;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.6;
 }
 
@@ -1175,7 +1354,7 @@ p {
   border-radius: 8px;
   background: #fff;
   color: #334155;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .future-note {
@@ -1473,7 +1652,48 @@ p {
 .contact-list span {
   color: #4f5f70;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.share-panel {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 16px 18px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.share-panel > strong {
+  color: #17476d;
+  font-size: 17px;
+}
+
+.share-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.share-group {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f7fbff;
+}
+
+.share-group:nth-child(2) {
+  border-color: #efd8a8;
+  background: #fffaf0;
+}
+
+.share-group > span {
+  color: #17476d;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .share-actions {
@@ -1485,7 +1705,8 @@ p {
 }
 
 .share-actions a,
-.copy-link-button {
+.copy-link-button,
+.copy-report-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1508,10 +1729,17 @@ p {
   color: #fff;
 }
 
+.copy-report-button {
+  background: #fffaf0;
+  color: #6b4515;
+}
+
 .share-actions a:hover,
 .share-actions a:focus-visible,
 .copy-link-button:hover,
-.copy-link-button:focus-visible {
+.copy-link-button:focus-visible,
+.copy-report-button:hover,
+.copy-report-button:focus-visible {
   filter: brightness(1.04);
   outline: 3px solid rgba(36, 95, 143, 0.2);
   outline-offset: 2px;
@@ -1521,6 +1749,21 @@ p {
   color: var(--green);
   font-size: 16px;
   font-weight: 700;
+}
+
+.updated-note {
+  width: fit-content;
+  padding: 8px 12px;
+  border: 1px solid #c8d7e5;
+  border-radius: 999px;
+  background: #fff;
+  color: #17476d;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.mobile-bottom-menu {
+  display: none;
 }
 
 .qr-card {
@@ -1548,6 +1791,107 @@ p {
 
 .qr-card a:hover {
   text-decoration: underline;
+}
+
+.next-guide {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 22px;
+  align-items: center;
+  margin: 28px 0 0;
+  padding: 22px 24px;
+  border: 1px solid #bdd8cc;
+  border-radius: 8px;
+  background: #f8fbf9;
+}
+
+.next-guide span {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.next-guide h2 {
+  margin: 0 0 8px;
+  color: #173f33;
+  font-size: 22px;
+}
+
+.next-guide p {
+  margin: 0;
+  color: #334155;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.next-guide-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.next-guide-actions button {
+  min-height: 50px;
+  padding: 10px 16px;
+  border: 1px solid #bdd8cc;
+  border-radius: 8px;
+  background: #fff;
+  color: #17476d;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.next-guide-actions button:hover,
+.next-guide-actions button:focus-visible {
+  filter: brightness(1.04);
+  outline: 3px solid rgba(55, 123, 98, 0.22);
+  outline-offset: 2px;
+}
+
+.final-check {
+  display: grid;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 22px 24px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.final-check span {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.final-check h2 {
+  margin: 0;
+  color: #15344e;
+  font-size: 22px;
+}
+
+.final-check ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.final-check li {
+  padding: 14px 16px;
+  border: 1px solid #d7e0eb;
+  border-radius: 8px;
+  background: #fff;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.65;
 }
 
 .message-block {
@@ -1903,7 +2247,7 @@ footer p {
 
   .page {
     margin: 0;
-    padding: 0 16px 32px;
+    padding: 0 16px 112px;
     border: 0;
     border-radius: 0;
     box-shadow: none;
@@ -1953,7 +2297,8 @@ footer p {
   }
 
   .otaru-hero-text h2 {
-    font-size: 22px;
+    font-size: 21px;
+    line-height: 1.42;
   }
 
   .otaru-hero-text p {
@@ -1993,7 +2338,8 @@ footer p {
   }
 
   .profile-points,
-  .profile-summary,
+  .top-overview,
+  .quick-read,
   .viewer-guide,
   .strength-grid,
   .interest-grid,
@@ -2001,10 +2347,14 @@ footer p {
   .goal-grid,
   .skill-grid,
   .portfolio-summary,
+  .progress-board,
   .portfolio-detail-grid,
   .portfolio-card,
   .public-info,
-  .contact-list {
+  .contact-list,
+  .share-groups,
+  .next-guide,
+  .final-check ul {
     grid-template-columns: 1fr;
   }
 
@@ -2017,9 +2367,15 @@ footer p {
 
   .tab-button {
     min-height: 56px;
-    padding: 10px 8px;
+    padding: 16px 8px 8px;
     font-size: 16px;
     line-height: 1.45;
+  }
+
+  .tab-button.is-active::after {
+    top: 4px;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   .tab-status {
@@ -2046,6 +2402,24 @@ footer p {
 
   .share-note span {
     font-size: 16px;
+  }
+
+  .quick-read {
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .quick-read strong {
+    font-size: 18px;
+  }
+
+  .top-overview {
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .top-overview div {
+    padding: 14px 16px;
   }
 
   .viewer-guide {
@@ -2180,6 +2554,12 @@ footer p {
   .external-link-note,
   .mobile-check-note,
   .report-share-note,
+  .portfolio-highlight,
+  .before-after-note,
+  .share-panel,
+  .next-guide,
+  .final-check,
+  .progress-card,
   .learning-result {
     padding: 14px 16px;
   }
@@ -2195,6 +2575,63 @@ footer p {
   .report-share-note a {
     width: 100%;
     min-height: 52px;
+  }
+
+  .share-actions {
+    display: grid;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .share-actions a,
+  .copy-link-button,
+  .copy-report-button {
+    width: 100%;
+    min-height: 52px;
+  }
+
+  .mobile-bottom-menu {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    z-index: 45;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid rgba(184, 206, 225, 0.9);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 10px 24px rgba(27, 36, 48, 0.16);
+    backdrop-filter: blur(10px);
+  }
+
+  .mobile-bottom-menu button {
+    min-height: 46px;
+    padding: 8px 6px;
+    border: 1px solid #b8cee1;
+    border-radius: 8px;
+    background: #17476d;
+    color: #fff;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .mobile-bottom-menu button:nth-child(2) {
+    background: #245f8f;
+  }
+
+  .mobile-bottom-menu button:nth-child(3) {
+    background: #377b62;
+  }
+
+  .mobile-bottom-menu button.is-current {
+    outline: 3px solid rgba(36, 95, 143, 0.25);
+    outline-offset: 1px;
+    background: #102f49;
   }
 
   .qualification-list {
@@ -2215,7 +2652,8 @@ footer p {
   }
 
   .share-actions a,
-  .copy-link-button {
+  .copy-link-button,
+  .copy-report-button {
     width: 100%;
     min-height: 54px;
   }
