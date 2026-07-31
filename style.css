@@ -1151,6 +1151,50 @@ p {
   line-height: 1.5;
 }
 
+.production-result {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 18px;
+  padding: 20px 22px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.production-result > strong {
+  color: #17476d;
+  font-size: 18px;
+}
+
+.production-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.production-grid div {
+  display: grid;
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid #d7e0eb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.production-grid span {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.production-grid p {
+  margin: 0;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
 .before-after-note {
   display: grid;
   gap: 6px;
@@ -1585,6 +1629,32 @@ p {
   font-size: 16px;
   font-weight: 700;
   overflow-wrap: anywhere;
+}
+
+.mobile-share-guide {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 16px 18px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.mobile-share-guide strong {
+  color: #17476d;
+  font-size: 17px;
+}
+
+.mobile-share-guide ol {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 24px;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
 }
 
 .report-share-note {
@@ -2363,6 +2433,7 @@ footer p {
   .goal-grid,
   .skill-grid,
   .portfolio-summary,
+  .production-grid,
   .progress-board,
   .portfolio-detail-grid,
   .portfolio-card,
@@ -2569,8 +2640,10 @@ footer p {
   .self-summary,
   .external-link-note,
   .mobile-check-note,
+  .mobile-share-guide,
   .report-share-note,
   .portfolio-highlight,
+  .production-result,
   .before-after-note,
   .share-panel,
   .next-guide,

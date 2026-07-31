@@ -96,6 +96,8 @@
       margin-top: 30px;
     }
 
+    .presentation-flow,
+    .target-note,
     .talk-summary,
     .today-summary {
       display: grid;
@@ -107,11 +109,54 @@
       background: #f8fbf9;
     }
 
+    .presentation-flow {
+      border-color: #efd8a8;
+      background: #fffaf0;
+    }
+
+    .presentation-flow ol {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .presentation-flow li {
+      margin: 0;
+      padding: 14px 16px;
+      border: 1px solid #efd8a8;
+      border-radius: 8px;
+      background: #fff;
+      color: #263545;
+      font-weight: 700;
+    }
+
+    .presentation-flow span {
+      display: block;
+      color: #a56d1d;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .target-note {
+      border-color: #c8d7e5;
+      background: #f8fafc;
+    }
+
+    .target-note p {
+      margin: 0;
+      color: #263545;
+      font-weight: 700;
+    }
+
     .talk-summary {
       border-color: #c8d7e5;
       background: #f7fbff;
     }
 
+    .presentation-flow strong,
+    .target-note strong,
     .talk-summary strong,
     .today-summary strong {
       color: #173f33;
@@ -270,12 +315,15 @@
       .summary-grid,
       .pdca-grid,
       .week-grid,
+      .presentation-flow ol,
       .today-summary ul {
         grid-template-columns: 1fr;
       }
 
       .card,
       .lead,
+      .presentation-flow,
+      .target-note,
       .talk-summary,
       .today-summary,
       .talk-box {
@@ -305,6 +353,23 @@
         この1週間は、プロフィールサイトを「人に見せやすい形」に整えることを中心に取り組みました。
         文章、画像、スマートフォン表示、公開ページ、報告資料を改善しました。
       </p>
+    </section>
+
+    <section class="target-note" aria-label="今回の対象">
+      <strong>今回の対象</strong>
+      <p>
+        今回の報告対象は、プロフィールサイトです。他の制作アプリとは分けて、
+        自己紹介ページとして見やすく整えた内容を報告します。
+      </p>
+    </section>
+
+    <section class="presentation-flow" aria-label="1分で説明する流れ">
+      <strong>1分で説明する流れ</strong>
+      <ol>
+        <li><span>1</span>何を作ったか</li>
+        <li><span>2</span>どこを改善したか</li>
+        <li><span>3</span>次に何をするか</li>
+      </ol>
     </section>
 
     <section class="talk-summary" aria-label="最初に伝えること">
@@ -414,8 +479,9 @@
     <section class="section" aria-label="今後の改善">
       <h2>5. 次に取り組むこと</h2>
       <ol>
-        <li>他の制作アプリも、テスト項目と改善点を整理する。</li>
-        <li>プロフィールサイトは、学習成果が増えたら追加する。</li>
+        <li>プロフィールサイトは、学習成果が増えたら短く追加する。</li>
+        <li>習慣コーチアプリなど、他の制作アプリは別ページで報告を整理する。</li>
+        <li>他アプリについては、テスト項目とUI/UX改善点をまとめる。</li>
         <li>PCとスマートフォンの表示確認を続ける。</li>
       </ol>
       <div class="links">
