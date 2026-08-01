@@ -162,6 +162,21 @@ body {
   animation: heroTextReveal 0.95s ease-out 0.28s both;
 }
 
+.otaru-hero-text .hero-short-message {
+  display: inline-block;
+  max-width: 38em;
+  margin-top: 12px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 8px;
+  background: rgba(19, 44, 67, 0.42);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+  backdrop-filter: blur(6px);
+}
+
 .profile {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -516,6 +531,70 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.6;
+}
+
+.report-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin: 18px 0 0;
+  padding: 20px 22px;
+  border: 1px solid #efd8a8;
+  border-radius: 8px;
+  background: #fffaf0;
+}
+
+.report-entry div:first-child {
+  display: grid;
+  gap: 5px;
+}
+
+.report-entry span {
+  color: #6b4515;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.report-entry strong {
+  color: #3d2b13;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.report-entry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.report-entry-actions a {
+  display: inline-grid;
+  min-height: 50px;
+  padding: 10px 16px;
+  place-items: center;
+  border: 1px solid #d9bd83;
+  border-radius: 8px;
+  background: #fff;
+  color: #17476d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+}
+
+.report-entry-actions a:first-child {
+  background: #17476d;
+  border-color: #17476d;
+  color: #fff;
+}
+
+.report-entry-actions a:hover,
+.report-entry-actions a:focus-visible {
+  outline: 3px solid rgba(165, 109, 29, 0.24);
+  outline-offset: 2px;
 }
 
 .section-kicker {
@@ -1123,6 +1202,42 @@ p {
   line-height: 1.7;
 }
 
+.learning-achievement {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 0 18px;
+}
+
+.learning-achievement div {
+  display: grid;
+  gap: 7px;
+  padding: 18px 20px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.learning-achievement span {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.learning-achievement strong {
+  color: #15344e;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.learning-achievement p {
+  margin: 0;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
 .portfolio-summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1655,6 +1770,40 @@ p {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.7;
+}
+
+.mobile-share-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.mobile-share-actions a {
+  display: inline-grid;
+  min-height: 50px;
+  padding: 10px 14px;
+  place-items: center;
+  border: 1px solid #b8cee1;
+  border-radius: 8px;
+  background: #17476d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mobile-share-actions a:nth-child(2) {
+  background: #fff;
+  color: var(--blue);
+}
+
+.mobile-share-actions a:hover,
+.mobile-share-actions a:focus-visible {
+  outline: 3px solid rgba(36, 95, 143, 0.2);
+  outline-offset: 2px;
 }
 
 .report-share-note {
@@ -2391,6 +2540,12 @@ footer p {
     font-size: 16px;
   }
 
+  .otaru-hero-text .hero-short-message {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
   .profile {
     grid-template-columns: 1fr;
     margin: 0 -16px;
@@ -2426,12 +2581,14 @@ footer p {
   .profile-points,
   .top-overview,
   .quick-read,
+  .report-entry,
   .viewer-guide,
   .strength-grid,
   .interest-grid,
   .future-grid,
   .goal-grid,
   .skill-grid,
+  .learning-achievement,
   .portfolio-summary,
   .production-grid,
   .progress-board,
@@ -2498,6 +2655,26 @@ footer p {
 
   .quick-read strong {
     font-size: 18px;
+  }
+
+  .report-entry {
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .report-entry strong {
+    font-size: 18px;
+  }
+
+  .report-entry-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+  }
+
+  .report-entry-actions a {
+    width: 100%;
+    min-height: 54px;
   }
 
   .top-overview {
@@ -2642,6 +2819,7 @@ footer p {
   .mobile-check-note,
   .mobile-share-guide,
   .report-share-note,
+  .learning-achievement div,
   .portfolio-highlight,
   .production-result,
   .before-after-note,
@@ -2659,6 +2837,14 @@ footer p {
 
   .report-share-note div {
     display: grid;
+  }
+
+  .mobile-share-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-share-actions a {
+    min-height: 54px;
   }
 
   .report-share-note a {
