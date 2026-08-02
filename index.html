@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://tetu5473.github.io/profile/">
   <meta property="og:image" content="https://tetu5473.github.io/profile/otaru-canal-real.jpg">
   <title>太田鉄也 プロフィール</title>
-  <link rel="stylesheet" href="style.css?v=20260802-01">
+  <link rel="stylesheet" href="style.css?v=20260803-01">
 </head>
 <body>
   <main class="page">
@@ -91,13 +91,31 @@
     <section class="viewer-guide" aria-label="初めて見る方への案内">
       <div>
         <strong>はじめて見る方へ</strong>
-        <span>気になる項目から見られます。短く確認したい場合は、まず「学習・これから」がおすすめです。</span>
+        <span>短く確認したい場合は、下の順番で見ると内容が分かりやすいです。</span>
       </div>
       <div class="viewer-guide-actions">
         <button type="button" data-open-tab="profile-tab">プロフィール</button>
         <button type="button" data-open-tab="history-tab">経歴・歩み</button>
         <button type="button" data-open-tab="learning-tab">学習・これから</button>
       </div>
+    </section>
+
+    <section class="view-flow" aria-label="おすすめの見る順番">
+      <article>
+        <span>1</span>
+        <strong>プロフィール</strong>
+        <p>人柄、写真、基本情報を確認できます。</p>
+      </article>
+      <article>
+        <span>2</span>
+        <strong>学習成果</strong>
+        <p>作ったもの、工夫した点、できるようになったことを確認できます。</p>
+      </article>
+      <article>
+        <span>3</span>
+        <strong>報告資料</strong>
+        <p>1週間の取り組みを短くまとめた資料を確認できます。</p>
+      </article>
     </section>
 
     <section class="quick-read" aria-label="短く確認したい方へのまとめ">
@@ -505,6 +523,23 @@
               <p>文字の大きさ、ボタンの押しやすさ、余白を調整し、携帯でも確認しやすくしました。</p>
             </div>
           </div>
+          <div class="work-showcase" aria-label="作品紹介として見てほしいポイント">
+            <strong>作品紹介として見てほしいところ</strong>
+            <div>
+              <article>
+                <span>制作物</span>
+                <p>自分の経験、学習内容、好きなことを1ページで見られるプロフィールサイトです。</p>
+              </article>
+              <article>
+                <span>操作</span>
+                <p>タブ切り替え、画像の切り替え、上へ戻るボタン、共有リンクを入れています。</p>
+              </article>
+              <article>
+                <span>工夫</span>
+                <p>初めて見る人が迷わないように、文章、余白、ボタン、スマホ表示を調整しています。</p>
+              </article>
+            </div>
+          </div>
           <div class="portfolio-summary" aria-label="制作物の概要">
             <div>
               <strong>公開済み</strong>
@@ -751,7 +786,7 @@
 
     <section class="closing-message" aria-label="これから目指すこと">
       <span>Next Vision</span>
-      <p>介護経験を活かして、使う人にやさしいWebサービスを作れる人を目指しています。</p>
+      <p>介護で培った「相手の立場で考える力」を、これからは使う人にやさしいWeb制作へ活かしていきます。</p>
     </section>
 
     <section class="profile-closing-note" aria-label="プロフィールのまとめ">
@@ -790,11 +825,11 @@
           </div>
           <div class="report-share-note">
             <strong>共有用資料</strong>
-            <span>1週間の報告ページをPDFと画像でも確認できます。Zoomなどで共有しやすい資料です。</span>
+            <span>まずは「報告ページ」がおすすめです。必要に応じてPDFや画像でも共有できます。</span>
             <div>
+              <a class="recommended-report-link" href="weekly-report.html">おすすめ：報告ページ</a>
               <a href="weekly-report.pdf" target="_blank" rel="noopener noreferrer">PDFを開く</a>
               <a href="weekly-report.png" target="_blank" rel="noopener noreferrer">画像を開く</a>
-              <a href="weekly-report.html">報告ページを開く</a>
             </div>
           </div>
           <ul class="contact-list">
@@ -827,6 +862,7 @@
         </div>
         <div class="qr-card">
           <img src="profile-qr.png" alt="プロフィールサイト公開URLのQRコード">
+          <p>スマートフォンで読み取ると、このプロフィールページを開けます。</p>
           <a href="https://tetu5473.github.io/profile/">公開ページを開く</a>
         </div>
       </div>

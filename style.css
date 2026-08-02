@@ -485,6 +485,47 @@ body {
   outline-offset: 2px;
 }
 
+.view-flow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 18px 0 0;
+}
+
+.view-flow article {
+  display: grid;
+  gap: 6px;
+  padding: 18px 20px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f7fbff;
+}
+
+.view-flow span {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 999px;
+  background: #17476d;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.view-flow strong {
+  color: #15344e;
+  font-size: 18px;
+}
+
+.view-flow p {
+  margin: 0;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
 .quick-read {
   display: grid;
   grid-template-columns: minmax(0, 300px) 1fr;
@@ -1238,6 +1279,50 @@ p {
   line-height: 1.75;
 }
 
+.work-showcase {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 18px;
+  padding: 20px 22px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.work-showcase > strong {
+  color: #17476d;
+  font-size: 18px;
+}
+
+.work-showcase > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.work-showcase article {
+  display: grid;
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid #d7e0eb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.work-showcase span {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.work-showcase p {
+  margin: 0;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
 .portfolio-summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1854,6 +1939,12 @@ p {
   outline-offset: 2px;
 }
 
+.report-share-note .recommended-report-link {
+  background: #17476d;
+  border-color: #17476d;
+  color: #fff;
+}
+
 .public-info {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;
@@ -2015,6 +2106,14 @@ p {
 .qr-card img {
   width: 132px;
   height: 132px;
+}
+
+.qr-card p {
+  margin: 0;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 .qr-card a {
@@ -2580,6 +2679,7 @@ footer p {
 
   .profile-points,
   .top-overview,
+  .view-flow,
   .quick-read,
   .report-entry,
   .viewer-guide,
@@ -2589,6 +2689,7 @@ footer p {
   .goal-grid,
   .skill-grid,
   .learning-achievement,
+  .work-showcase > div,
   .portfolio-summary,
   .production-grid,
   .progress-board,
@@ -2700,6 +2801,10 @@ footer p {
   .viewer-guide-actions button {
     width: 100%;
     min-height: 52px;
+  }
+
+  .view-flow article {
+    padding: 16px;
   }
 
   .content-block {
@@ -2820,6 +2925,7 @@ footer p {
   .mobile-share-guide,
   .report-share-note,
   .learning-achievement div,
+  .work-showcase,
   .portfolio-highlight,
   .production-result,
   .before-after-note,
