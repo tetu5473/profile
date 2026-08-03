@@ -638,6 +638,59 @@ body {
   outline-offset: 2px;
 }
 
+.page-jump {
+  display: grid;
+  grid-template-columns: minmax(0, 260px) 1fr;
+  gap: 18px;
+  align-items: start;
+  margin: 18px 0 0;
+  padding: 20px 22px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.page-jump strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #17476d;
+  font-size: 18px;
+}
+
+.page-jump span {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.page-jump-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.page-jump-actions button {
+  min-height: 48px;
+  padding: 9px 14px;
+  border: 1px solid #b8cee1;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--blue);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.page-jump-actions button:hover,
+.page-jump-actions button:focus-visible {
+  background: #f7fbff;
+  outline: 3px solid rgba(36, 95, 143, 0.2);
+  outline-offset: 2px;
+}
+
 .section-kicker {
   display: inline-block;
   margin-bottom: 4px;
@@ -1206,6 +1259,28 @@ p {
   line-height: 1.8;
 }
 
+.future-app-note {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 18px 20px;
+  border: 1px solid #bdd8cc;
+  border-radius: 8px;
+  background: #f8fbf9;
+}
+
+.future-app-note strong {
+  color: var(--green);
+  font-size: 18px;
+}
+
+.future-app-note p {
+  margin: 0;
+  color: #173f33;
+  font-weight: 700;
+  line-height: 1.85;
+}
+
 .portfolio-list {
   display: grid;
   gap: 18px;
@@ -1317,6 +1392,45 @@ p {
 
 .work-showcase p {
   margin: 0;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.portfolio-preview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 18px;
+  align-items: center;
+  margin: 0 0 18px;
+  padding: 18px 20px;
+  border: 1px solid #c8d7e5;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.portfolio-preview img {
+  display: block;
+  width: 100%;
+  max-height: 230px;
+  border: 1px solid #d7e0eb;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.portfolio-preview figcaption {
+  display: grid;
+  gap: 8px;
+}
+
+.portfolio-preview strong {
+  color: #17476d;
+  font-size: 18px;
+}
+
+.portfolio-preview span {
   color: #334155;
   font-size: 16px;
   font-weight: 700;
@@ -2682,6 +2796,7 @@ footer p {
   .view-flow,
   .quick-read,
   .report-entry,
+  .page-jump,
   .viewer-guide,
   .strength-grid,
   .interest-grid,
@@ -2690,6 +2805,7 @@ footer p {
   .skill-grid,
   .learning-achievement,
   .work-showcase > div,
+  .portfolio-preview,
   .portfolio-summary,
   .production-grid,
   .progress-board,
@@ -2776,6 +2892,21 @@ footer p {
   .report-entry-actions a {
     width: 100%;
     min-height: 54px;
+  }
+
+  .page-jump {
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .page-jump-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .page-jump-actions button {
+    width: 100%;
+    min-height: 52px;
   }
 
   .top-overview {
@@ -2926,6 +3057,7 @@ footer p {
   .report-share-note,
   .learning-achievement div,
   .work-showcase,
+  .portfolio-preview,
   .portfolio-highlight,
   .production-result,
   .before-after-note,
@@ -2939,6 +3071,10 @@ footer p {
 
   .learning-result ul {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-preview img {
+    max-height: 220px;
   }
 
   .report-share-note div {

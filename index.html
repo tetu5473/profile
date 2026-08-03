@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://tetu5473.github.io/profile/">
   <meta property="og:image" content="https://tetu5473.github.io/profile/otaru-canal-real.jpg">
   <title>太田鉄也 プロフィール</title>
-  <link rel="stylesheet" href="style.css?v=20260803-01">
+  <link rel="stylesheet" href="style.css?v=20260804-01">
 </head>
 <body>
   <main class="page">
@@ -73,6 +73,7 @@
         <div class="profile-actions" aria-label="プロフィール内の主な導線">
           <button class="primary-action" type="button" data-open-tab="learning-tab" data-scroll-target="portfolio-section">学習成果を見る</button>
           <button type="button" data-open-tab="learning-tab" data-scroll-target="care-web-section">介護経験の活かし方</button>
+          <a href="weekly-report.html">報告ページを見る</a>
           <a href="https://tetu5473.github.io/profile/" target="_blank" rel="noopener noreferrer">公開ページを開く</a>
         </div>
         <ul class="profile-points">
@@ -141,6 +142,22 @@
       </div>
     </section>
 
+    <section class="page-jump" aria-label="ページ内リンク">
+      <div>
+        <strong>ページ内リンク</strong>
+        <span>縦に長くなってきたため、見たい場所へすぐ移動できるようにしました。</span>
+      </div>
+      <div class="page-jump-actions">
+        <button type="button" data-open-tab="profile-tab" data-scroll-target="basic-info-section">基本情報</button>
+        <button type="button" data-open-tab="profile-tab" data-scroll-target="strength-section">強み</button>
+        <button type="button" data-open-tab="history-tab" data-scroll-target="history-section">経歴</button>
+        <button type="button" data-open-tab="learning-tab" data-scroll-target="portfolio-section">学習成果</button>
+        <button type="button" data-open-tab="learning-tab" data-scroll-target="future-app-section">今後作りたいもの</button>
+        <button type="button" data-open-tab="learning-tab" data-scroll-target="quality-check-section">完成度チェック</button>
+        <button type="button" data-open-tab="learning-tab" data-scroll-target="share-section">共有リンク</button>
+      </div>
+    </section>
+
     <div class="tab-status" id="tab-status" aria-live="polite">
       <strong>プロフィール</strong>
       <span>基本情報、写真、強み、自己紹介をまとめています。</span>
@@ -148,7 +165,7 @@
 
     <div class="tab-panels">
       <div class="tab-panel is-active" id="profile-tab" role="tabpanel" aria-labelledby="profile-tab-button">
-        <section class="content-block">
+        <section class="content-block" id="basic-info-section">
           <h2>基本情報</h2>
           <table>
             <tr>
@@ -186,7 +203,7 @@
           </table>
         </section>
 
-        <section class="content-block image-story-block">
+        <section class="content-block image-story-block" id="roots-section">
           <h2>ルーツとこれからの挑戦</h2>
           <div class="story-carousel" aria-label="ルーツと挑戦の画像ギャラリー">
             <div class="story-slides">
@@ -239,7 +256,7 @@
           </div>
         </section>
 
-        <section class="content-block highlight-block">
+        <section class="content-block highlight-block" id="strength-section">
           <h2>3つの強み</h2>
           <div class="strength-grid">
             <div class="strength-card">
@@ -257,7 +274,7 @@
           </div>
         </section>
 
-        <section class="content-block">
+        <section class="content-block" id="self-introduction-section">
           <h2>自己紹介</h2>
           <div class="readable-text">
             <p class="key-message">介護の現場で培った「相手の立場で考える力」を、Web制作の学習にも活かしていきたいです。</p>
@@ -285,7 +302,7 @@
       </div>
 
       <div class="tab-panel" id="history-tab" role="tabpanel" aria-labelledby="history-tab-button" hidden>
-        <section class="content-block">
+        <section class="content-block" id="history-section">
           <h2>経歴</h2>
           <table>
             <tr>
@@ -495,6 +512,13 @@
               <p>通院、面談、サービス調整、書類作成などの予定を整理し、抜けや漏れを減らせる画面を考えたいです。</p>
             </article>
           </div>
+          <div class="future-app-note" id="future-app-section" aria-label="今後作りたいもの">
+            <strong>今後作りたいもの</strong>
+            <p>
+              介護現場で使いやすい「記録」「申し送り」「予定確認」のような小さなWebアプリを作ってみたいです。
+              現場で働く人が迷わず使える、分かりやすい画面作りを目指します。
+            </p>
+          </div>
         </section>
 
         <section class="message-block">
@@ -540,6 +564,13 @@
               </article>
             </div>
           </div>
+          <figure class="portfolio-preview">
+            <img src="profile-preview.png" alt="プロフィールサイトの画面プレビュー" loading="lazy" decoding="async">
+            <figcaption>
+              <strong>画面プレビュー</strong>
+              <span>公開しているプロフィールサイトの見た目を、作品紹介として確認できます。</span>
+            </figcaption>
+          </figure>
           <div class="portfolio-summary" aria-label="制作物の概要">
             <div>
               <strong>公開済み</strong>
@@ -805,7 +836,7 @@
             このページは、プロフィールとWeb制作の学習成果を見てもらうために公開しています。
             個人の連絡先やSNSは掲載せず、安心して共有できる内容にしています。
           </p>
-          <p class="updated-note">最終調整日：2026年8月2日</p>
+          <p class="updated-note">最終調整日：2026年8月4日</p>
           <div class="mobile-check-note">
             <strong>スマートフォン確認</strong>
             <span>携帯のブラウザでも、同じプロフィールページを確認できます。</span>
@@ -868,14 +899,16 @@
       </div>
     </section>
 
-    <section class="final-check" aria-label="公開前の確認">
+    <section class="final-check" id="quality-check-section" aria-label="完成度チェック">
       <span>Final Check</span>
-      <h2>公開前に確認したこと</h2>
+      <h2>完成度チェック</h2>
       <ul>
         <li>スマートフォンでも文字とボタンが見やすい</li>
         <li>個人の連絡先やSNSを掲載していない</li>
         <li>プロフィール、学習成果、共有資料へ移動しやすい</li>
         <li>初めて見る人にも伝わりやすい表現に整えている</li>
+        <li>報告ページ、PDF、画像を共有しやすい形にしている</li>
+        <li>QRコードからスマートフォンで確認できる</li>
       </ul>
     </section>
 
@@ -889,6 +922,7 @@
       </div>
       <div class="next-guide-actions">
         <button type="button" data-open-tab="learning-tab" data-scroll-target="portfolio-section">学習成果を見る</button>
+        <button type="button" data-open-tab="learning-tab" data-scroll-target="quality-check-section">完成度チェックを見る</button>
         <button type="button" data-open-tab="interest-tab">好きなことを見る</button>
         <button type="button" data-open-tab="learning-tab" data-scroll-target="share-section">共有リンクを見る</button>
       </div>
